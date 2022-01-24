@@ -1,0 +1,221 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" class="h-full scrollable-container"><head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" href="/auth/resources/6.0.1/login/domru/build/images/favicon.ico" type="image/x-icon">
+
+        <title>Система единого входа Identity/SSO</title>
+
+<!-- Google Tag Manager -->
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-PMVZ29D"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PMVZ29D');</script>
+<!-- End Google Tag Manager -->
+                <link href="/auth/resources/6.0.1/login/domru/build/bundle.min.css?hash=20211111204026" rel="stylesheet">
+    <style id="svelte-10fljnv-style">.chat__messages.svelte-10fljnv{padding-left:16px;padding-right:16px}@media screen and (min-width: 480px){.chat__messages.svelte-10fljnv{padding-left:24px;padding-right:24px}}@media screen and (min-width: 960px){.chat__messages.svelte-10fljnv{padding-left:32px;padding-right:32px}}@media screen and (min-width: 1200px){.chat__messages.svelte-10fljnv{padding-left:16px;padding-right:24px}}.chat__messages.svelte-10fljnv{overflow-y:auto;height:100%;padding-top:16px;padding-bottom:8px}@media screen and (min-width: 960px){.chat__messages.svelte-10fljnv{padding-bottom:24px}}.chat.svelte-10fljnv{position:relative;height:100%;display:flex;flex-direction:column;justify-content:flex-end;background-color:#FAFAFA}.chat__welcome-message.svelte-10fljnv{font:11px/16px "Fedra Book Demi", sans-serif;letter-spacing:0.35px}@media screen and (min-width: 640px){.chat__welcome-message.svelte-10fljnv{font-size:13px}}@media screen and (min-width: 1200px){.chat__welcome-message.svelte-10fljnv{font-size:14px;line-height:19px}}.chat__welcome-message.svelte-10fljnv{color:rgba(0, 0, 0, 0.5)}.chat__welcome-message.svelte-10fljnv{text-align:center;padding:16px}</style><style id="svelte-zbmsio-style">.ss-wrapper{overflow:hidden;width:100%;height:100%;position:relative;z-index:1;float:left}.ss-container{height:100%;overflow:hidden}.ss-content{height:100%;margin-right:-18px;padding:0 0 0 0;position:relative;overflow:auto;box-sizing:border-box}.ss-scroll{position:relative;background:rgba(255, 221, 0, 0.8);width:5px;border-radius:4px;top:0;z-index:2;cursor:pointer;transition:opacity 0.25s linear}.ss-hidden{display:none}.ss-container:hover .ss-scroll, .ss-container:active .ss-scroll{opacity:1}.ss-grabbed{-o-user-select:none;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none;user-select:none}</style><style id="svelte-18vxenk-style">.chat-info.svelte-18vxenk{font:10px/12px "Fedra Book Demi", sans-serif;letter-spacing:0.5px}@media screen and (min-width: 640px){.chat-info.svelte-18vxenk{font-size:12px;line-height:16px}}.chat-info.svelte-18vxenk{color:rgba(0, 0, 0, 0.3)}.chat-info.svelte-18vxenk{background-color:transparent;padding:0 8px}</style><style id="svelte-kn1lu4-style">.chat-input__textarea.svelte-kn1lu4.svelte-kn1lu4{font:13px/18px "Fedra Book", sans-serif;letter-spacing:0.25px}@media screen and (min-width: 640px){.chat-input__textarea.svelte-kn1lu4.svelte-kn1lu4{font-size:14px;line-height:19px;letter-spacing:normal}}@media screen and (min-width: 1200px){.chat-input__textarea.svelte-kn1lu4.svelte-kn1lu4{font-size:16px;line-height:21px;letter-spacing:-0.5px}}.chat-input__textarea.svelte-kn1lu4.svelte-kn1lu4{color:rgba(0, 0, 0, 0.8)}.chat-input.svelte-kn1lu4.svelte-kn1lu4{padding-left:16px;padding-right:16px}@media screen and (min-width: 480px){.chat-input.svelte-kn1lu4.svelte-kn1lu4{padding-left:24px;padding-right:24px}}@media screen and (min-width: 960px){.chat-input.svelte-kn1lu4.svelte-kn1lu4{padding-left:32px;padding-right:32px}}@media screen and (min-width: 1200px){.chat-input.svelte-kn1lu4.svelte-kn1lu4{padding-left:16px;padding-right:24px}}.chat-input.svelte-kn1lu4.svelte-kn1lu4{border-top:1px solid #c7c7c7;display:flex;flex-direction:row}.chat-input.svelte-kn1lu4 .send-button.svelte-kn1lu4{background-color:#FFDD00;border-radius:50%;width:40px;height:40px;display:flex;justify-content:center;align-items:center;line-height:40px;color:black}.chat-input.svelte-kn1lu4 .send-button.svelte-kn1lu4>span{display:flex;justify-content:center}.chat-input__actions.svelte-kn1lu4.svelte-kn1lu4{display:flex;align-items:center;align-self:center;width:32px;height:32px;position:relative}.chat-input__actions.svelte-kn1lu4>.svelte-kn1lu4{position:absolute;transform:translate(-50%, -50%) scale(0.8);left:50%;top:50%}.chat-input__textarea.svelte-kn1lu4.svelte-kn1lu4{background-color:transparent;display:block;border:none;resize:none;overflow:hidden;max-height:200px;outline:none;box-sizing:border-box;margin:0;width:100%;padding-top:16px;padding-right:24px;padding-bottom:16px}.chat-input__textarea.svelte-kn1lu4.svelte-kn1lu4::placeholder{color:rgba(0, 0, 0, 0.5)}.chat-input__action.svelte-kn1lu4.svelte-kn1lu4{display:block;cursor:pointer;border:none;background:none;padding:0;width:32px;height:32px;margin:0;outline:none;color:rgba(0, 0, 0, 0.6);opacity:0;transition:all .2s ease-out;display:none}.chat-input__action.visible.svelte-kn1lu4.svelte-kn1lu4{opacity:1;display:block;transform:translate(-50%, -50%) scale(1)}.chat-input__action.svelte-kn1lu4.svelte-kn1lu4:last-child{margin-right:0}.chat-input.svelte-kn1lu4 .attachment-field.svelte-kn1lu4{display:none}</style></head>
+    <body class="min-h-full flex flex-col p-4 sm:px-6 md:py-6 lg:px-8 xl:py-8 xl:px-6">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMVZ29D"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <header id="page-header" class="flex items-center">
+    <div class="w-full flex justify-between">
+      <a href="https://newlkb2b.dom.ru/">
+        <div class="h-30px w-60px md:h-10 md:w-20 xl:h-16 xl:w-32 bg-contain bg-no-repeat logo logo--domru"></div>
+      </a>
+      <div class="flex items-center xl:items-start">
+        <div id="cities-button" class="sm:mr-10" data-city=""><button class="flex focus:outline-none h-6 items-center" id="show-cities" title="Выбор города"><svg class="h-8 w-auto mr-1 outline-none city-icon" fill="none" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><g opacity="0.5"><path d="M12 7C12 8.66549 11.1612 10.1872 10.1317 11.331C9.62283 11.8964
+        9.09196 12.341 8.64842 12.6367C8.42613 12.7849 8.23957 12.8865 8.10068
+        12.9473C8.05723 12.9664 8.02393 12.979 8 12.9873C7.97607 12.979 7.94277
+        12.9664 7.89932 12.9473C7.76043 12.8865 7.57387 12.7849 7.35158
+        12.6367C6.90804 12.341 6.37717 11.8964 5.86829 11.331C4.83881 10.1872 4
+        8.66549 4 7C4 4.79086 5.79086 3 8 3C10.2091 3 12 4.79086 12 7Z" stroke="black" stroke-width="2"></path><circle cx="8" cy="7" fill="black" r="1"></circle></g></svg> <span class="border-dashed border-b border-main-600 h-6 leading-normal">Ярославль</span></button></div>
+
+        <a href="tel:88003339000" class="opacity-50" phone--hidden-small="" phone-call-center="">
+          <div class="flex h-6 items-center">
+            <svg class="h-8 w-auto mr-1 phone-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.5">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.60046 21.5506C1.89121 19.8402 1.5 17.9652 1.5 16C1.5 14.0348 1.89121 12.1598 2.60046 10.4494C2.70624 10.1944 2.99877 10.0733 3.25385 10.1791C3.50893 10.2849 3.62997 10.5774 3.52419 10.8325C2.8644 12.4236 2.5 14.1686 2.5 16C2.5 17.8314 2.8644 19.5764 3.52419 21.1675C3.62997 21.4226 3.50893 21.7151 3.25385 21.8209C2.99877 21.9267 2.70624 21.8056 2.60046 21.5506ZM10.1791 28.7461C10.2849 28.4911 10.5774 28.37 10.8325 28.4758C12.4236 29.1356 14.1686 29.5 16 29.5C17.8314 29.5 19.5764 29.1356 21.1675 28.4758C21.4226 28.37 21.7151 28.4911 21.8209 28.7461C21.9267 29.0012 21.8056 29.2938 21.5506 29.3995C19.8402 30.1088 17.9652 30.5 16 30.5C14.0348 30.5 12.1598 30.1088 10.4494 29.3995C10.1944 29.2938 10.0733 29.0012 10.1791 28.7461ZM10.1791 3.25385C10.0733 2.99878 10.1944 2.70624 10.4494 2.60046C12.1598 1.89121 14.0348 1.5 16 1.5C17.9652 1.5 19.8402 1.89121 21.5506 2.60046C21.8056 2.70624 21.9267 2.99877 21.8209 3.25385C21.7151 3.50893 21.4226 3.62997 21.1675 3.52419C19.5764 2.8644 17.8314 2.5 16 2.5C14.1686 2.5 12.4236 2.8644 10.8325 3.52419C10.5774 3.62997 10.2849 3.50893 10.1791 3.25385ZM28.7461 21.8209C28.4911 21.7151 28.37 21.4226 28.4758 21.1675C29.1356 19.5764 29.5 17.8314 29.5 16C29.5 14.1686 29.1356 12.4236 28.4758 10.8325C28.37 10.5774 28.4911 10.2849 28.7461 10.1791C29.0012 10.0733 29.2938 10.1944 29.3995 10.4494C30.1088 12.1598 30.5 14.0348 30.5 16C30.5 17.9652 30.1088 19.8402 29.3995 21.5506C29.2938 21.8056 29.0012 21.9267 28.7461 21.8209Z" fill="black"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.8285 18.8284C20.3906 17.2663 20.3906 14.7337 18.8285 13.1716C17.2664 11.6095 14.7337 11.6095 13.1716 13.1716C11.6095 14.7337 11.6095 17.2663 13.1716 18.8284C14.7337 20.3905 17.2664 20.3905 18.8285 18.8284ZM20.2427 20.2426C22.5859 17.8995 22.5859 14.1005 20.2427 11.7574C17.8996 9.41421 14.1006 9.41421 11.7574 11.7574C9.41428 14.1005 9.41428 17.8995 11.7574 20.2426C14.1006 22.5858 17.8996 22.5858 20.2427 20.2426Z" fill="black"></path>
+                <path d="M18.1861 21.5892C18.801 21.3492 19.3842 21.0036 19.9079 20.553C21.0528 22.1012 22.1366 23.7754 23.1924 25.6074C22.6518 26.0134 22.0838 26.368 21.4965 26.6708C20.4265 24.8088 19.3351 23.1284 18.1861 21.5892Z" fill="black"></path>
+                <path d="M10.5032 26.6708C11.5732 24.8088 12.6646 23.1284 13.8136 21.5892C13.1987 21.3492 12.6155 21.0036 12.0918 20.553C10.9469 22.1012 9.86342 23.7758 8.80759 25.6077C9.34828 26.0138 9.9159 26.368 10.5032 26.6708Z" fill="black"></path>
+                <path d="M6.39245 23.1926C8.22444 22.1368 9.89864 21.053 11.4468 19.9081C10.9962 19.3843 10.6506 18.8012 10.4107 18.1862C8.87147 19.3353 7.19105 20.4267 5.32903 21.4966C5.63183 22.0839 5.98642 22.6519 6.39245 23.1926Z" fill="black"></path>
+                <path d="M5.32903 10.5033C7.19105 11.5733 8.87147 12.6647 10.4107 13.8138C10.6506 13.1988 10.9962 12.6157 11.4468 12.0919C9.89864 10.947 8.22409 9.86357 6.3921 8.80774C5.98607 9.34843 5.63183 9.91605 5.32903 10.5033Z" fill="black"></path>
+                <path d="M8.80725 6.3926C9.86307 8.22459 10.9469 9.89879 12.0918 11.447C12.6155 10.9964 13.1987 10.6508 13.8136 10.4108C12.6646 8.87162 11.5732 7.1912 10.5032 5.32918C9.9159 5.63198 9.34793 5.98657 8.80725 6.3926Z" fill="black"></path>
+                <path d="M21.4965 5.32918C20.4265 7.1912 19.3351 8.87162 18.1861 10.4108C18.801 10.6508 19.3842 10.9964 19.9079 11.447C21.0528 9.89879 22.1363 8.22424 23.1921 6.39226C22.6514 5.98622 22.0838 5.63198 21.4965 5.32918Z" fill="black"></path>
+                <path d="M25.6072 8.8074C23.7753 9.86322 22.1011 10.947 20.5529 12.0919C21.0035 12.6157 21.3491 13.1988 21.589 13.8138C23.1282 12.6647 24.8086 11.5733 26.6707 10.5033C26.3679 9.91605 26.0133 9.34809 25.6072 8.8074Z" fill="black"></path>
+                <path d="M26.6707 21.4966C24.8086 20.4267 23.1282 19.3353 21.589 18.1862C21.3491 18.8012 21.0035 19.3843 20.5529 19.9081C22.1011 21.053 23.7756 22.1364 25.6076 23.1923C26.0136 22.6516 26.3679 22.0839 26.6707 21.4966Z" fill="black"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M23.0711 23.0711C26.9763 19.1658 26.9763 12.8342 23.0711 8.92893C19.1658 5.02369 12.8342 5.02369 8.92893 8.92893C5.02369 12.8342 5.02369 19.1658 8.92893 23.0711C12.8342 26.9763 19.1658 26.9763 23.0711 23.0711ZM24.4853 24.4853C29.1716 19.799 29.1716 12.201 24.4853 7.51472C19.799 2.82843 12.201 2.82843 7.51472 7.51472C2.82843 12.201 2.82843 19.799 7.51472 24.4853C12.201 29.1716 19.799 29.1716 24.4853 24.4853Z" fill="black"></path>
+                <rect x="6.10156" y="7.51562" width="2" height="2" transform="rotate(-45 6.10156 7.51562)" fill="black"></rect>
+                <rect x="6.10156" y="24.4844" width="2" height="2" transform="rotate(-45 6.10156 24.4844)" fill="black"></rect>
+                <rect x="23.0703" y="7.51562" width="2" height="2" transform="rotate(-45 23.0703 7.51562)" fill="black"></rect>
+                <rect x="23.0703" y="24.4844" width="2" height="2" transform="rotate(-45 23.0703 24.4844)" fill="black"></rect>
+              </g>
+            </svg>
+            <span class="phone-number">8&nbsp;800&nbsp;333&nbsp;9000</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </header>
+
+        <main id="content" class="flex-1 py-8 md:py-12 mx-auto md:mx-auto w-full max-w-440px xl:max-w-470px">
+
+<div class="flex items-center pb-4">
+  <div class="rounded-full bg-extra w-2 h-2 mr-1"></div>
+  <span class="caption text-main-600"> – Поля, обязательные к заполнению</span>
+</div>
+  <header class="flex justify-between items-center pb-2 sm:pb-3 md:pb-4">
+    <h1 id="page-title" class="border-extra border-b-2 md:border-b-3 xl:border-b-4 text-3xl">
+      <b>
+        Вход
+      </b>
+    </h1>
+
+      <h2 class="text-secondary-title text-3xl">
+        <a href=" ">
+          <b>
+             
+          </b>
+        </a>
+      </h2>
+  </header>
+
+    <script>
+        window.addEventListener('message', function (event) {
+            if (event.origin !== document.location.origin) {
+                var loginForm = document.getElementById('loginForm');
+                var actionAttribute = loginForm.getAttribute("action");
+                if (actionAttribute.indexOf("iframe") === -1) {
+                    actionAttribute = actionAttribute + "&iframe=1";
+                }
+                loginForm.setAttribute("action", actionAttribute);
+            }
+        });
+    </script>
+
+
+    <script>
+        window.addEventListener('message', function (event) {
+            if (event.origin !== document.location.origin) {
+                var loginForm = document.getElementById('loginForm');
+                var actionAttribute = loginForm.getAttribute("action");
+                if (actionAttribute.indexOf("iframe") === -1) {
+                    actionAttribute = actionAttribute + "&iframe=1";
+                }
+                loginForm.setAttribute("action", actionAttribute);
+            }
+        });
+    </script>
+
+                <div class="py-2 sm:py-3 lg:py-4">
+
+        <p class="pb-3 login-title-text">Если у Вас уже есть учетная запись, Вы можете войти</p>
+            <form id="loginForm" class="md:flex md:flex-wrap md:justify-between" onsubmit="login.disabled = true; return true;" action="https://auth.dom.ru/auth/realms/user/login-actions/authenticate?session_code=4HEPO3Ku8OY93ZEKGMkpj8v35xIk5DfWDWiDlM-1sXw&amp;execution=6aaaf3f4-3bde-4263-9598-4f0a907fdeb0&amp;client_id=lkb2b&amp;tab_id=8a6jY_aVQoE" method="post">
+                <div class="field field__container field--required mb-3 sm:mb-4 md:w-full">
+                    <input class="hidden w-0 h-0" id="domain-login" name="city">
+                        <input name="username" id="username" class="field__input" label="Ваш логин" placeholder="Введите номер телефона/эл. почту" value="" type="text" autofocus="" autocomplete="off">
+                    <label class="field__label" for="username">Ваш логин</label>
+                </div>
+
+  <div class="field mb-7 sm:mb-8 md:w-full
+    field--required">
+
+  <div class="field__container">
+      <div class="passw_ok hidden"><svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.16361 7.18734L2.3947 4.41833L0.980469 5.83256L5.22293 10.075L13.0606 2.35629L11.5871 0.882812L5.16361 7.18734Z" fill="#69BE28"></path>
+        </svg></div>
+
+    <input class="field__input" name="password" id="password" placeholder="Введите пароль" type="password" value="">
+        <label class="field__label" for="password">
+            Пароль
+        </label>
+      <div class="field__open" target="password">
+        <span class="close"><svg class="eye" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.84277 11.4619C9.44922 20.1826 22.5537 20.1816 28.1602 11.4609L29.8428 12.543C28.8818 14.0391 27.7275 15.3096 26.4395 16.3555L28.834 19.9473L27.1699 21.0566L24.8096 17.5166C24.002 18.0195 23.1553 18.4453 22.2832 18.7959L23.459 22.7148L21.543 23.2891L20.3848 19.4287C19.2773 19.7246 18.1416 19.9062 17.001 19.9727V24.002H15.001V19.9727C13.8604 19.9053 12.7246 19.7236 11.6172 19.4277L10.459 23.2891L8.54297 22.7148L9.71875 18.7959C9.26953 18.6152 8.82715 18.4141 8.39355 18.1934C7.98535 17.9863 7.58496 17.7607 7.19336 17.5166L4.83301 21.0566L3.16895 19.9473L5.56348 16.3555C4.27539 15.3096 3.12207 14.0381 2.16016 12.543L3.84277 11.4619Z" fill="black"></path>
+          </svg></span>
+        <span class="open hidden"><svg class="eye" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8877 13.21C24.3564 14.2793 26.5625 16.0557 28.1602 18.541L29.8428 17.459C26.6455 12.4863 21.3232 10 16.001 10C10.6787 10 5.35645 12.4863 2.16016 17.459L3.84277 18.54C5.44043 16.0547 7.64746 14.2783 10.1152 13.21C9.41016 14.3027 9.00098 15.6035 9.00098 17C9.00098 20.8662 12.1348 24 16.001 24C19.8672 24 23.001 20.8662 23.001 17C23.001 15.6035 22.5928 14.3027 21.8877 13.21ZM16.001 12C13.2393 12 11.001 14.2383 11.001 17C11.001 19.7617 13.2393 22 16.001 22C18.7627 22 21.001 19.7617 21.001 17C21.001 14.2383 18.7627 12 16.001 12Z" fill="black"></path>
+          </svg></span>
+
+      </div>
+    </div>
+      <div class="field__error-message" id="password-error-message"></div>
+  </div>
+
+                <div class="flex justify-between w-full items-center">
+                    <button id="submit" class="btn btn-main w-1/2 btn-enter" type="submit" disabled="">Войти</button>
+                        <span class="reset-password text-right">
+                            <a href="/auth/realms/user/login-actions/reset-credentials?client_id=lkb2b&amp;tab_id=8a6jY_aVQoE">Забыли пароль?</a>
+                        </span>
+                </div>
+
+            </form>
+
+    <script>
+        window.addEventListener('message', function (event) {
+            if (event.origin !== document.location.origin) {
+                var loginForm = document.getElementById('loginForm');
+                var actionAttribute = loginForm.getAttribute("action");
+                if (actionAttribute.indexOf("iframe") === -1) {
+                    actionAttribute = actionAttribute + "&iframe=1";
+                }
+                loginForm.setAttribute("action", actionAttribute);
+            }
+        });
+    </script>
+
+                </div>
+
+        </main>
+
+<footer id="page-footer" class="w-full fixed bottom-0 footer">
+  <span class="text-main-500">© АО «ЭР-Телеком Холдинг» 2011-
+    <script>
+            document.write(new Date().getFullYear())
+    </script>2021
+  </span>
+</footer>
+
+        <div id="cities-modal"><div class="flex flex-col fixed w-screen bg-white inset-0 py-4 md:py-6 xl:py-8 false scrollable-container overflow-x-hidden overflow-y-auto" id="location-selection-window"><header id="cities-header" class="flex items-center pb-4 px-4 sm:px-6 lg:px-8 xl:px-6"><div id="cities-header-div" class="w-full flex justify-between items-center"><a id="cities-header-logo" href="https://newlkb2b.dom.ru/" class="hidden sm:block"><div class="h-30px w-60px md:h-10 md:w-20 xl:h-16 xl:w-32 bg-contain bg-no-repeat logo logo--domru"></div></a> <form class="md:flex md:flex-wrap md:justify-between"><fieldset><div class="field field--row md:w-full items-center"><label for="search-city" class="mr-4 hidden lg:block">Текущий выбор:</label> <input name="Поиск города" id="search-city" class="field__input field__input--city" placeholder="Выберите город"> <button class="btn btn-main ml-4 p-3 min-w-0 btn__choose" type="submit">Выбрать</button></div></fieldset></form> <button id="close-cities"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.5"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.4142 16.0002L27.7072 5.70718L26.293 4.29297L16
+                  14.5859L5.70718 4.29312L4.29297 5.70733L14.5858
+                  16.0002L4.29297 26.293L5.70718 27.7072L16 17.4144L26.293
+                  27.7073L27.7072 26.2931L17.4142 16.0002Z" fill="black"></path></g></svg></button> </div></header> <div class="flex flex-1 justify-center content-box h-full mt-4 xl:mt-17 scrollable-container overflow-x-hidden overflow-y-auto custom-scroll"><ul class="flex flex-wrap flex-row cities-container w-full px-4"><p class="m-auto">Нет заданного города</p></ul></div></div></div>
+
+            <script src="/auth/resources/6.0.1/login/domru/build/bundle.min.js?hash=20211111204026" async=""></script>
+
+
+    <script type="text/javascript">
+
+        let isFramed = false;
+        try {
+            isFramed = window !== window.top || document !== top.document || self.location !== top.location;
+        } catch (e) {
+            isFramed = true;
+        }
+        if (isFramed) {
+            var x = 0;
+            var intervalID = setInterval(function () {
+                if (document.getElementById('show-cities') != null) {
+                    document.getElementById('page-header').style.display = 'none';
+                    document.getElementById('page-footer').style.display = 'none';
+                    document.getElementById('content').style.padding = '0';
+                    window.clearInterval(intervalID);
+                } else if (++x > 50) {
+                    window.clearInterval(intervalID);
+                }
+            }, 150);
+        }
+    </script>
+    <!--<script src="/auth/resources/6.0.1/login/domru/build/iframeResizer.contentWindow.min.js" async></script> -->
+    
+    
+<div class="er-chat er-chat-hidden"><div class="er-chat__header"><div class="er-chat__header__close"></div></div> <div class="er-chat__content"><div class="chat svelte-10fljnv"><div class="ss-container" style="height: 100%;"><div class="ss-wrapper"><div class="ss-content"><div class="cont"><div class="chat__messages svelte-10fljnv"></div></div></div></div> <div class="ss-scroll"></div></div> <div class="chat__welcome-message svelte-10fljnv">Если у Вас есть вопросы, задайте их здесь.</div> <div class="chat-info svelte-18vxenk">   </div> <div class="chat-input svelte-kn1lu4"><textarea class="chat-input__textarea svelte-kn1lu4" placeholder="Написать сообщение" rows="1" style="overflow-x: hidden; overflow-wrap: break-word; height: 53px;"></textarea> <div class="chat-input__actions svelte-kn1lu4"><button class="chat-input__action send-button svelte-kn1lu4"><span class="icon icon--send"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8507 19.7523L5.46828 14.3808L25.2881 6.71347L17.6485 26.5365L12.2663 21.1651L17.9921 15.4509L17.5 15L17.0397 14.5176L16.5793 14.0352L10.8507 19.7523ZM3 14.7431L3.59524 12.9609L26.7591 4L28 5.23842L19.0714 28.406L17.2857 29L3 14.7431Z" fill="currentColor"></path>
+</svg></span></button> <label class="chat-input__action attachment svelte-kn1lu4 visible"><input id="chat-file" type="file" class="attachment-field svelte-kn1lu4" multiple=""> <span class="icon icon--husks"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M13 8C13 5.23858 15.2386 3 18 3C20.7614 3 23 5.23858 23 8V22C23 25.866 19.866 29 16 29C12.134 29 9 25.866 9 22V8H11V22C11 24.7614 13.2386 27 16 27C18.7614 27 21 24.7614 21 22V8C21 6.34315 19.6569 5 18 5C16.3431 5 15 6.34315 15 8V21C15 21.5523 15.4477 22 16 22C16.5523 22 17 21.5523 17 21V8H19V21C19 22.6569 17.6569 24 16 24C14.3431 24 13 22.6569 13 21V8Z" fill="currentColor"></path>
+</svg></span></label></div></div></div></div></div> <div id="er-chat-label" class="er-chat-label"><div class="er-chat-label__circle"><div class="er-chat-label__circle__icon"></div></div> 
+  <div class="er-chat-label__text">Онлайн-консультант</div></div></body></html>

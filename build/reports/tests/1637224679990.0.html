@@ -1,0 +1,2319 @@
+<html lang="ru"><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MVZV2"></script><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script type="text/javascript">
+            var EYii = new Object;
+        </script>
+        <link rel="stylesheet" type="text/css" href="/assets/2f78ff71/app.css">
+<link rel="stylesheet" type="text/css" href="/assets/ffe22fb6/custom.css">
+<link rel="stylesheet" type="text/css" href="/assets/ffe22fb6/chat.css">
+<script type="text/javascript" src="/lib/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/ed80addd/jquery.yiiactiveform.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+EYii.data=$.parseJSON('{"cookieDomain":"dom.ru"}')
+
+                $(function () {
+                    $('.js-subscription-waiting-for-activation-close').on('click', function () {
+                        $(this).closest('.b-message').hide();
+                        $.cookie('hide_subscription_waiting_for_activation', 1);
+                    });
+                });
+            
+/*]]>*/
+</script>
+<title>Документы | Личный кабинет B2B Дом.ru</title>
+        <meta name="keywords" content="Личный кабинет b2b domru Дом.ru корпоративный интернет, телефония, видеонаблюдение, облачная АТС">
+        <meta name="description" content="Единый личный кабинет для корпоративных клиентов">
+        <meta name="viewport" content="width=device-width">
+        <meta name="csrf-token" content="UTFwZlVMcVV3SDJ0YWVqd3R1NjhGdF9oV1Z5S25SRWi43FWBV8Tb9um2xiCsH5RRSvM0-8K7FcL15b1yrFyGEw==">
+        <meta name="csrf-param" content="YII_CSRF_TOKEN">
+
+        <!--[if gt IE 8]><!--><link rel="stylesheet" href="/publish/style.css?1633337914"><!--<![endif]-->
+        <!--[if lt IE 9]><link rel="stylesheet" href="/publish/style.ie.css"><![endif]-->
+        <!--[if lt IE 9]><script src="/lib/html5shiv.js"></script><![endif]-->
+
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+                    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+(w[c] = w[c] || []).push(function() {
+try {
+w.yaCounter22385650 = new Ya.Metrika({ id:22385650, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true });
+} catch(e) { }
+});
+
+var n = d.getElementsByTagName("script")[0],
+s = d.createElement("script"),
+f = function () { n.parentNode.insertBefore(s, n); };
+s.type = "text/javascript";
+s.async = true;
+s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/22385650" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MVZV2');</script>
+<!-- End Google Tag Manager -->
+            <style type="text/css">@charset "UTF-8";
+.mx-datepicker {
+  position: relative;
+  display: inline-block;
+  width: 210px;
+  color: #73879c;
+  font: 14px/1.5 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei', sans-serif; }
+  .mx-datepicker * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .mx-datepicker.disabled {
+    opacity: 0.7;
+    cursor: not-allowed; }
+
+.mx-datepicker-range {
+  width: 320px; }
+
+.mx-datepicker-popup {
+  position: absolute;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  z-index: 1000; }
+
+.mx-input-wrapper {
+  position: relative; }
+  .mx-input-wrapper .mx-clear-wrapper {
+    display: none; }
+  .mx-input-wrapper:hover .mx-clear-wrapper {
+    display: block; }
+  .mx-input-wrapper:hover .mx-clear-wrapper + .mx-input-append {
+    display: none; }
+
+.mx-input {
+  display: inline-block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 30px;
+  padding-left: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+  .mx-input:disabled, .mx-input.disabled {
+    opacity: 0.7;
+    cursor: not-allowed; }
+  .mx-input:focus {
+    outline: none; }
+  .mx-input::-ms-clear {
+    display: none; }
+
+.mx-input-append {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 100%;
+  padding: 6px; }
+
+.mx-input-icon {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-style: normal;
+  color: #555;
+  text-align: center;
+  cursor: pointer; }
+
+.mx-calendar-icon {
+  width: 100%;
+  height: 100%;
+  color: #555;
+  stroke-width: 8px;
+  stroke: currentColor;
+  fill: currentColor; }
+
+.mx-clear-icon::before {
+  display: inline-block;
+  content: '\2716';
+  vertical-align: middle; }
+
+.mx-clear-icon::after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle; }
+
+.mx-range-wrapper {
+  width: 496px;
+  overflow: hidden; }
+
+.mx-shortcuts-wrapper {
+  text-align: left;
+  padding: 0 12px;
+  line-height: 34px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+  .mx-shortcuts-wrapper .mx-shortcuts {
+    background: none;
+    outline: none;
+    border: 0;
+    color: #48576a;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    cursor: pointer; }
+    .mx-shortcuts-wrapper .mx-shortcuts:hover {
+      color: #419dec; }
+    .mx-shortcuts-wrapper .mx-shortcuts:after {
+      content: '|';
+      margin: 0 10px;
+      color: #48576a; }
+
+.mx-datepicker-footer {
+  padding: 4px;
+  clear: both;
+  text-align: right;
+  border-top: 1px solid rgba(0, 0, 0, 0.05); }
+
+.mx-datepicker-btn {
+  font-size: 12px;
+  line-height: 1;
+  padding: 7px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-radius: 3px; }
+
+.mx-datepicker-btn-confirm {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #73879c; }
+  .mx-datepicker-btn-confirm:hover {
+    color: #1284e7;
+    border-color: #1284e7; }
+
+/* 日历组件 */
+.mx-calendar {
+  float: left;
+  color: #73879c;
+  padding: 6px 12px;
+  font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, sans-serif; }
+  .mx-calendar * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+
+.mx-calendar-header {
+  padding: 0 4px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  overflow: hidden; }
+  .mx-calendar-header > a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer; }
+    .mx-calendar-header > a:hover {
+      color: #419dec; }
+  .mx-icon-last-month, .mx-icon-last-year,
+  .mx-icon-next-month,
+  .mx-icon-next-year {
+    padding: 0 6px;
+    font-size: 20px;
+    line-height: 30px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
+  .mx-icon-last-month, .mx-icon-last-year {
+    float: left; }
+  
+  .mx-icon-next-month,
+  .mx-icon-next-year {
+    float: right; }
+
+.mx-calendar-content {
+  width: 224px;
+  height: 224px; }
+  .mx-calendar-content .cell {
+    vertical-align: middle;
+    cursor: pointer; }
+    .mx-calendar-content .cell:hover {
+      background-color: #eaf8fe; }
+    .mx-calendar-content .cell.actived {
+      color: #fff;
+      background-color: #1284e7; }
+    .mx-calendar-content .cell.inrange {
+      background-color: #eaf8fe; }
+    .mx-calendar-content .cell.disabled {
+      cursor: not-allowed;
+      color: #ccc;
+      background-color: #f3f3f3; }
+
+.mx-panel {
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+
+.mx-panel-date {
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0; }
+  .mx-panel-date td,
+  .mx-panel-date th {
+    font-size: 12px;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    overflow: hidden;
+    text-align: center; }
+  .mx-panel-date td.today {
+    color: #2a90e9; }
+  .mx-panel-date td.last-month, .mx-panel-date td.next-month {
+    color: #ddd; }
+
+.mx-panel-year {
+  padding: 7px 0; }
+  .mx-panel-year .cell {
+    display: inline-block;
+    width: 40%;
+    margin: 1px 5%;
+    line-height: 40px; }
+
+.mx-panel-month .cell {
+  display: inline-block;
+  width: 30%;
+  line-height: 40px;
+  margin: 8px 1.5%; }
+
+.mx-time-list {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+  overflow-y: auto;
+  /* 滚动条滑块 */ }
+  .mx-time-list .mx-time-picker-item {
+    display: block;
+    text-align: left;
+    padding-left: 10px; }
+  .mx-time-list:first-child {
+    border-left: 0; }
+  .mx-time-list .cell {
+    width: 100%;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px; }
+  .mx-time-list::-webkit-scrollbar {
+    width: 8px;
+    height: 8px; }
+  .mx-time-list::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1); }
+  .mx-time-list:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); }
+</style><style type="text/css">.c3 svg{font:10px sans-serif;-webkit-tap-highlight-color:transparent}.c3 line,.c3 path{fill:none;stroke:#000}.c3 text{-webkit-user-select:none;-moz-user-select:none;user-select:none}.c3-bars path,.c3-event-rect,.c3-legend-item-tile,.c3-xgrid-focus,.c3-ygrid{shape-rendering:crispEdges}.c3-chart-arc path{stroke:#fff}.c3-chart-arc rect{stroke:#fff;stroke-width:1}.c3-chart-arc text{fill:#fff;font-size:13px}.c3-grid line{stroke:#aaa}.c3-grid text{fill:#aaa}.c3-xgrid,.c3-ygrid{stroke-dasharray:3 3}.c3-text.c3-empty{fill:grey;font-size:2em}.c3-line{stroke-width:1px}.c3-circle._expanded_{stroke-width:1px;stroke:#fff}.c3-selected-circle{fill:#fff;stroke-width:2px}.c3-bar{stroke-width:0}.c3-bar._expanded_{fill-opacity:1;fill-opacity:.75}.c3-target.c3-focused{opacity:1}.c3-target.c3-focused path.c3-line,.c3-target.c3-focused path.c3-step{stroke-width:2px}.c3-target.c3-defocused{opacity:.3!important}.c3-region{fill:#4682b4;fill-opacity:.1}.c3-brush .extent{fill-opacity:.1}.c3-legend-item{font-size:12px}.c3-legend-item-hidden{opacity:.15}.c3-legend-background{opacity:.75;fill:#fff;stroke:#d3d3d3;stroke-width:1}.c3-title{font:14px sans-serif}.c3-tooltip-container{z-index:10}.c3-tooltip{border-collapse:collapse;border-spacing:0;background-color:#fff;empty-cells:show;-webkit-box-shadow:7px 7px 12px -9px #777;-moz-box-shadow:7px 7px 12px -9px #777;box-shadow:7px 7px 12px -9px #777;opacity:.9}.c3-tooltip tr{border:1px solid #ccc}.c3-tooltip th{background-color:#aaa;font-size:14px;padding:2px 5px;text-align:left;color:#fff}.c3-tooltip td{font-size:13px;padding:3px 6px;background-color:#fff;border-left:1px dotted #999}.c3-tooltip td>span{display:inline-block;width:10px;height:10px;margin-right:6px}.c3-tooltip td.value{text-align:right}.c3-area{stroke-width:0;opacity:.2}.c3-chart-arcs-title{dominant-baseline:middle;font-size:1.3em}.c3-chart-arcs .c3-chart-arcs-background{fill:#e0e0e0;stroke:#fff}.c3-chart-arcs .c3-chart-arcs-gauge-unit{fill:#000;font-size:16px}.c3-chart-arcs .c3-chart-arcs-gauge-max{fill:#777}.c3-chart-arcs .c3-chart-arcs-gauge-min{fill:#777}.c3-chart-arc .c3-gauge-value{fill:#000}.c3-chart-arc.c3-target g path{opacity:1}.c3-chart-arc.c3-target.c3-focused g path{opacity:1}.c3-drag-zoom.enabled{pointer-events:all!important;visibility:visible}.c3-drag-zoom.disabled{pointer-events:none!important;visibility:hidden}.c3-drag-zoom .extent{fill-opacity:.1}</style><style type="text/css">.vue-slider-component{position:relative;box-sizing:border-box;-ms-user-select:none;user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none}.vue-slider-component.vue-slider-disabled{opacity:.5;cursor:not-allowed}.vue-slider-component.vue-slider-has-label{margin-bottom:15px}.vue-slider-component.vue-slider-disabled .vue-slider-dot{cursor:not-allowed}.vue-slider-component .vue-slider{position:relative;display:block;border-radius:15px;background-color:#ccc}.vue-slider-component .vue-slider:after{content:"";position:absolute;left:0;top:0;width:100%;height:100%;z-index:2}.vue-slider-component .vue-slider-process{position:absolute;border-radius:15px;background-color:#3498db;transition:all 0s;z-index:1}.vue-slider-component .vue-slider-process.vue-slider-process-dragable{cursor:pointer;z-index:3}.vue-slider-component.vue-slider-horizontal .vue-slider-process{width:0;height:100%;top:0;left:0;will-change:width}.vue-slider-component.vue-slider-vertical .vue-slider-process{width:100%;height:0;bottom:0;left:0;will-change:height}.vue-slider-component.vue-slider-horizontal-reverse .vue-slider-process{width:0;height:100%;top:0;right:0}.vue-slider-component.vue-slider-vertical-reverse .vue-slider-process{width:100%;height:0;top:0;left:0}.vue-slider-component .vue-slider-dot{position:absolute;transition:all 0s;will-change:transform;cursor:pointer;z-index:5}.vue-slider-component .vue-slider-dot .vue-slider-dot-handle{width:100%;height:100%;border-radius:50%;background-color:#fff;box-shadow:.5px .5px 2px 1px rgba(0,0,0,.32)}.vue-slider-component .vue-slider-dot.vue-slider-dot-focus .vue-slider-dot-handle{box-shadow:0 0 2px 1px #3498db}.vue-slider-component .vue-slider-dot--static .vue-slider-dot-handle--static{width:100%;height:100%;border-radius:50%;background-color:#ccc;-webkit-transform:scale(.85);transform:scale(.85)}.vue-slider-component .vue-slider-dot--static.vue-slider-dot-active .vue-slider-dot-handle--static{width:100%;height:100%;border-radius:50%;background-color:#3498db;-webkit-transform:scale(.85);transform:scale(.85)}.vue-slider-component .vue-slider-dot.vue-slider-dot-dragging{z-index:5}.vue-slider-component .vue-slider-dot.vue-slider-dot-disabled{z-index:4}.vue-slider-component.vue-slider-horizontal .vue-slider-dot{left:0}.vue-slider-component.vue-slider-vertical .vue-slider-dot{bottom:0}.vue-slider-component.vue-slider-horizontal-reverse .vue-slider-dot{right:0}.vue-slider-component.vue-slider-vertical-reverse .vue-slider-dot{top:0}.vue-slider-component .vue-slider-tooltip-wrap{display:none;position:absolute;z-index:9}.vue-slider-component .vue-slider-dot--static:hover .vue-slider-tooltip-wrap{display:block}.vue-slider-component .vue-slider-tooltip{display:block;font-size:14px;white-space:nowrap;padding:2px 5px;min-width:20px;text-align:center;color:#fff;border-radius:5px;border:1px solid #3498db;background-color:#3498db}.vue-slider-component .vue-slider-tooltip-wrap.vue-slider-tooltip-top{top:-9px;left:50%;-webkit-transform:translate(-50%,-100%);transform:translate(-50%,-100%)}.vue-slider-component .vue-slider-tooltip-wrap.vue-slider-tooltip-bottom{bottom:-9px;left:50%;-webkit-transform:translate(-50%,100%);transform:translate(-50%,100%)}.vue-slider-component .vue-slider-tooltip-wrap.vue-slider-tooltip-left{top:50%;left:-9px;-webkit-transform:translate(-100%,-50%);transform:translate(-100%,-50%)}.vue-slider-component .vue-slider-tooltip-wrap.vue-slider-tooltip-right{top:50%;right:-9px;-webkit-transform:translate(100%,-50%);transform:translate(100%,-50%)}.vue-slider-component .vue-slider-tooltip-top .vue-merged-tooltip .vue-slider-tooltip:before,.vue-slider-component .vue-slider-tooltip-wrap.vue-slider-tooltip-top .vue-slider-tooltip:before{content:"";position:absolute;bottom:-10px;left:50%;width:0;height:0;border:5px solid transparent;border:6px solid transparent\0;border-top-color:inherit;-webkit-transform:translate(-50%);transform:translate(-50%)}.vue-slider-component .vue-slider-tooltip-wrap.vue-merged-tooltip{display:block;visibility:hidden}.vue-slider-component .vue-slider-tooltip-bottom .vue-merged-tooltip .vue-slider-tooltip:before,.vue-slider-component .vue-slider-tooltip-wrap.vue-slider-tooltip-bottom .vue-slider-tooltip:before{content:"";position:absolute;top:-10px;left:50%;width:0;height:0;border:5px solid transparent;border:6px solid transparent\0;border-bottom-color:inherit;-webkit-transform:translate(-50%);transform:translate(-50%)}.vue-slider-component .vue-slider-tooltip-left .vue-merged-tooltip .vue-slider-tooltip:before,.vue-slider-component .vue-slider-tooltip-wrap.vue-slider-tooltip-left .vue-slider-tooltip:before{content:"";position:absolute;top:50%;right:-10px;width:0;height:0;border:5px solid transparent;border:6px solid transparent\0;border-left-color:inherit;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.vue-slider-component .vue-slider-tooltip-right .vue-merged-tooltip .vue-slider-tooltip:before,.vue-slider-component .vue-slider-tooltip-wrap.vue-slider-tooltip-right .vue-slider-tooltip:before{content:"";position:absolute;top:50%;left:-10px;width:0;height:0;border:5px solid transparent;border:6px solid transparent\0;border-right-color:inherit;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.vue-slider-component .vue-slider-dot.vue-slider-hover:hover .vue-slider-tooltip-wrap{display:block}.vue-slider-component .vue-slider-dot.vue-slider-always .vue-slider-tooltip-wrap{display:block!important}.vue-slider-component .vue-slider-piecewise{position:absolute;width:100%;padding:0;margin:0;left:0;top:0;height:100%;list-style:none}.vue-slider-component .vue-slider-piecewise-item{position:absolute;width:8px;height:8px}.vue-slider-component .vue-slider-piecewise-dot{position:absolute;left:50%;top:50%;width:100%;height:100%;display:inline-block;background-color:rgba(0,0,0,.16);border-radius:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);z-index:2;transition:all .3s}.vue-slider-component .vue-slider-piecewise-item:first-child .vue-slider-piecewise-dot,.vue-slider-component .vue-slider-piecewise-item:last-child .vue-slider-piecewise-dot{visibility:hidden}.vue-slider-component.vue-slider-horizontal-reverse .vue-slider-piecewise-label,.vue-slider-component.vue-slider-horizontal .vue-slider-piecewise-label{position:absolute;display:inline-block;top:100%;left:50%;white-space:nowrap;font-size:12px;color:#333;-webkit-transform:translate(-50%,8px);transform:translate(-50%,8px);visibility:visible}.vue-slider-component.vue-slider-vertical-reverse .vue-slider-piecewise-label,.vue-slider-component.vue-slider-vertical .vue-slider-piecewise-label{position:absolute;display:inline-block;top:50%;left:100%;white-space:nowrap;font-size:12px;color:#333;-webkit-transform:translate(8px,-50%);transform:translate(8px,-50%);visibility:visible}.vue-slider-component .vue-slider-sr-only{clip:rect(1px,1px,1px,1px);height:1px;width:1px;overflow:hidden;position:absolute!important}</style><style type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-- Chart --*/
+.c3 svg {
+  font: 10px sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.c3 path, .c3 line {
+  fill: none;
+  stroke: #000;
+}
+.c3 text {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.c3-legend-item-tile,
+.c3-xgrid-focus,
+.c3-ygrid,
+.c3-event-rect,
+.c3-bars path {
+  shape-rendering: crispEdges;
+}
+.c3-chart-arc path {
+  stroke: #fff;
+}
+.c3-chart-arc rect {
+  stroke: white;
+  stroke-width: 1;
+}
+.c3-chart-arc text {
+  fill: #fff;
+  font-size: 13px;
+}
+
+/*-- Axis --*/
+/*-- Grid --*/
+.c3-grid line {
+  stroke: #aaa;
+}
+.c3-grid text {
+  fill: #aaa;
+}
+.c3-xgrid, .c3-ygrid {
+  stroke-dasharray: 3 3;
+}
+
+/*-- Text on Chart --*/
+.c3-text.c3-empty {
+  fill: #808080;
+  font-size: 2em;
+}
+
+/*-- Line --*/
+.c3-line {
+  stroke-width: 1px;
+}
+
+/*-- Point --*/
+.c3-circle._expanded_ {
+  stroke-width: 1px;
+  stroke: white;
+}
+.c3-selected-circle {
+  fill: white;
+  stroke-width: 2px;
+}
+
+/*-- Bar --*/
+.c3-bar {
+  stroke-width: 0;
+}
+.c3-bar._expanded_ {
+  fill-opacity: 1;
+  fill-opacity: 0.75;
+}
+
+/*-- Focus --*/
+.c3-target.c3-focused {
+  opacity: 1;
+}
+.c3-target.c3-focused path.c3-line, .c3-target.c3-focused path.c3-step {
+  stroke-width: 2px;
+}
+.c3-target.c3-defocused {
+  opacity: 0.3 !important;
+}
+
+/*-- Region --*/
+.c3-region {
+  fill: steelblue;
+  fill-opacity: 0.1;
+}
+
+/*-- Brush --*/
+.c3-brush .extent {
+  fill-opacity: 0.1;
+}
+
+/*-- Select - Drag --*/
+/*-- Legend --*/
+.c3-legend-item {
+  font-size: 12px;
+}
+.c3-legend-item-hidden {
+  opacity: 0.15;
+}
+.c3-legend-background {
+  opacity: 0.75;
+  fill: white;
+  stroke: lightgray;
+  stroke-width: 1;
+}
+
+/*-- Title --*/
+.c3-title {
+  font: 14px sans-serif;
+}
+
+/*-- Tooltip --*/
+.c3-tooltip-container {
+  z-index: 10;
+}
+.c3-tooltip {
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: #fff;
+  empty-cells: show;
+  -webkit-box-shadow: 7px 7px 12px -9px #777777;
+  -moz-box-shadow: 7px 7px 12px -9px #777777;
+  box-shadow: 7px 7px 12px -9px #777777;
+  opacity: 0.9;
+}
+.c3-tooltip tr {
+  border: 1px solid #CCC;
+}
+.c3-tooltip th {
+  background-color: #aaa;
+  font-size: 14px;
+  padding: 2px 5px;
+  text-align: left;
+  color: #FFF;
+}
+.c3-tooltip td {
+  font-size: 13px;
+  padding: 3px 6px;
+  background-color: #fff;
+  border-left: 1px dotted #999;
+}
+.c3-tooltip td > span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+}
+.c3-tooltip td.value {
+  text-align: right;
+}
+
+/*-- Area --*/
+.c3-area {
+  stroke-width: 0;
+  opacity: 0.2;
+}
+
+/*-- Arc --*/
+.c3-chart-arcs-title {
+  dominant-baseline: middle;
+  font-size: 1.3em;
+}
+.c3-chart-arcs .c3-chart-arcs-background {
+  fill: #e0e0e0;
+  stroke: #FFF;
+}
+.c3-chart-arcs .c3-chart-arcs-gauge-unit {
+  fill: #000;
+  font-size: 16px;
+}
+.c3-chart-arcs .c3-chart-arcs-gauge-max {
+  fill: #777;
+}
+.c3-chart-arcs .c3-chart-arcs-gauge-min {
+  fill: #777;
+}
+.c3-chart-arc .c3-gauge-value {
+  fill: #000;
+}
+.c3-chart-arc.c3-target g path {
+  opacity: 1;
+}
+.c3-chart-arc.c3-target.c3-focused g path {
+  opacity: 1;
+}
+
+/*-- Zoom --*/
+.c3-drag-zoom.enabled {
+  pointer-events: all !important;
+  visibility: visible;
+}
+.c3-drag-zoom.disabled {
+  pointer-events: none !important;
+  visibility: hidden;
+}
+.c3-drag-zoom .extent {
+  fill-opacity: 0.1;
+}
+</style></head>
+    <body class="b-page js-b-page">
+                    <div class="new-lk-window">
+                <div class="new-lk-window__wrapper">
+                    <img src="/images/thamb_up.png" class="">
+                    <a class="new-lk-window__text" href="https://beta-lkb2b.dom.ru/login">
+                        <b>Протестировать новую версию Личного Кабинета</b>
+                    </a>
+                </div>
+            </div>
+        
+                    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVZV2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+                <div class="b-popup-mat js-popup-mat"></div>
+                <div class="b-popup__button-letter">
+    <div class="b-button-letter js-b-button-letter">
+        <div class="b-button-letter__banner js-b-button-letter__banner"></div>
+        <div class="b-button-letter__content js-b-button-letter__content">
+            <span class="b-button-letter__title">Тема обращения</span>
+            <ul class="b-button-letter__list">
+                <li class="b-button-letter__list-item">
+                    <span class="b-button-letter__list-item-span js-b-button-letter__list-item-span" data-problem_class_id="5774">
+                        Благодарность
+                    </span>
+                </li>
+                <li class="b-button-letter__list-item">
+                    <span class="b-button-letter__list-item-span js-b-button-letter__list-item-span" data-problem_class_id="5772">
+                        Идея
+                    </span>
+                </li>
+                <li class="b-button-letter__list-item">
+                    <span class="b-button-letter__list-item-span js-b-button-letter__list-item-span" data-problem_class_id="5773">
+                        Претензия
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>                    <script>  
+        dataLayer = [];
+        dataLayer.push({'event': 'setUserId', 'userId': 'samaraЕ7759963'});
+        dataLayer.push({'event': 'setCitydomain', 'citydomain': 'samara'});
+    </script>
+                            
+
+        <div class="b-page__wrapper">
+
+            <!-- Шапка -->
+            <div class="f-page__header f-header container">
+    <div class="row">
+        <div class="col-2">
+            <a href="/">
+                <div class="f-page__logo"></div>
+                            </a>
+        </div>
+        <div class="col-1 align-self-center">
+            <div class="f-header__icon f-header__icon__profile"></div>
+        </div>
+        <div class="col-3 px-0">
+            <div class="f-header__termin">Профиль:</div>
+            <div class="wrap-break f-header__profile">
+                <a class="link link-border link-border-yellow" href="/contacts">"Оборонэнерго"</a>
+            </div>
+	    <div class="f-header__termin">Номер договора:</div>
+	    <a class="link link-border link-border-yellow f-header__contract" href="#">Е7759963</a><div class="f-header__dropdown"><div class="f-header__dropdown-termin">Выберите договор</div><div class="f-header__dropdown-item js-header__change-agreement" data-agreement-id="3417401">9289671</div><div class="f-header__dropdown-item js-header__change-agreement" data-agreement-id="3422014">9289671_AIS</div><div class="f-header__dropdown-item js-header__change-agreement" data-agreement-id="3775509">9289671_MGF</div><div class="f-header__dropdown-item js-header__change-agreement" data-agreement-id="3422015">9289671_MTT</div><div class="f-header__dropdown-item js-header__change-agreement active" data-agreement-id="3140427">Е7759963</div><div class="f-header__dropdown-line"></div><div class="f-header__dropdown-item f-header__dropdown-item-icon js-header__to-document">Документы</div></div><div class="f-header__dropdown"><div class="f-header__dropdown-termin">Выберите договор</div><div class="f-header__dropdown-item js-header__change-agreement" data-agreement-id="3417401">9289671</div><div class="f-header__dropdown-item js-header__change-agreement" data-agreement-id="3422014">9289671_AIS</div><div class="f-header__dropdown-item js-header__change-agreement" data-agreement-id="3775509">9289671_MGF</div><div class="f-header__dropdown-item js-header__change-agreement" data-agreement-id="3422015">9289671_MTT</div><div class="f-header__dropdown-item js-header__change-agreement active" data-agreement-id="3140427">Е7759963</div><div class="f-header__dropdown-line"></div><div class="f-header__dropdown-item f-header__dropdown-item-icon js-header__to-document">Документы</div></div>
+	    <div class="f-header__termin">Персональный менеджер:</div>
+	    <div class="wrap-break f-header__profile">
+		<a data-popup-name="manager" data-popup-type="blue" class="link link-border link-border-yellow js-popup-open">
+		    Ломиворотова Ольга Викторовна		</a>
+	    </div>
+        </div>
+        <div class="col-1 align-self-center">
+            <div class="f-header__icon f-header__icon__cash"></div>
+        </div>
+        <div class="col-2 px-0">
+            <div class="f-header__termin">У вас на счёте:</div>
+            <div class="mb-3">
+                <a class="link link-border link-border-yellow link-large white-space-nowrap f-header__price-rouble" href="/pay">0,00</a>
+            </div>
+
+            
+            <a class="link link-block" href="/moneybag">Обещанный платёж</a>
+                                <span class="js-replenish b-link_type_pseudo b-link">Детализация</span>
+                        <div class="header__autopay">
+                <div class="header__autopay-icon"></div>
+                <a class="link link-block header__autopay-link" href="/pay">Автоплатеж</a>
+            </div>
+            
+        </div>
+        <div class="col-1">
+            <div class="f-header__icon f-header__icon__exit"></div>
+            <a href="/logout" class="link link-block">Выход</a>
+        </div>
+    </div>
+    <div class="f-header__shadow"></div>
+</div>
+<div id="b-popup__manager" class="b-popup b-popup__type-blue">
+    <div class="b-popup__container">
+        <div class="b-popup__close"></div>
+        <div class="b-telstat__popup-title b-popup__head">Персональный менеджер</div>
+        <div class="b-popup__content">
+            <b class="b-text-h3">Ломиворотова Ольга Викторовна</b>
+            <div class="b-antivirus__row">
+                <label for="b-antivirus__person" class="b-antivirus__label">Телефон</label>
+                <b>8-800-333-9000 доб. 80841; сот. 89171012906</b>
+            </div>
+            <div class="b-antivirus__row">
+                <label for="b-antivirus__person" class="b-antivirus__label">E-mail</label>
+                <b>olga.mikhailova@domru.ru</b>
+            </div>
+        </div>
+    </div>
+</div>            
+            <div class="b-page__middle">
+                <div class="b-page__sidebar">
+                    <div class="b-page__services">
+
+                        <!-- Главное меню -->
+                        
+<ul class="b-services">
+                                                                                                                                                            <li class="b-services__item">
+                <a class="b-services__kind " onclick="" href="/internet"><i class="b-services__kind-ico b-services__kind-ico_inet"></i>Интернет</a>
+                
+                                <ul class="b-services__sublist">
+                                                                        <li class="b-services__subitem ">
+                                                                <a href="/internet/statistics" onclick="">Статистика</a>
+                            </li>
+                                                                                                                                                                                                                                                                                                                            <li class="b-services__subitem ">
+                                                                <a href="/internet/revercezone" onclick="">Обратные зоны</a>
+                            </li>
+                                                                                                <li class="b-services__subitem ">
+                                                                <a href="/internet/rates" onclick="">Управление тарифами</a>
+                            </li>
+                                                                                                                                            <li class="b-services__subitem ">
+                                                                <a href="/internet/contentfilter" onclick="">Расширенная контент-фильтрация</a>
+                            </li>
+                                                                                                <li class="b-services__subitem ">
+                                                                <a href="/internet/speedup" onclick="">Увеличение скорости</a>
+                            </li>
+                                                                                                                                                                                                                                                                                                                                    </ul>
+            </li>
+                                <li class="b-services__item">
+                <a class="b-services__kind " onclick="" href="/cctv"><i class="b-services__kind-ico b-services__kind-ico_cctv"></i>Видеонаблюдение</a>
+                
+                                <ul class="b-services__sublist">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+            </li>
+                                <li class="b-services__item">
+                <a class="b-services__kind " onclick="" href="/antiviruses"><i class="b-services__kind-ico b-services__kind-ico_antivirus"></i><div class="b-services__kind-text">Антивирусы</div></a>
+                
+                                <ul class="b-services__sublist">
+                                                                                                                                                                                                            <li class="b-services__subitem ">
+                                                                <a href="/antiviruses" onclick="">Все антивирусы</a>
+                            </li>
+                                                                                                                                                                                                                                                                                <li class="b-services__subitem ">
+                                                                <a href="/antiviruses/subscriptions" onclick="">Управление подписками</a>
+                            </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+            </li>
+                                <li class="b-services__item">
+                <a class="b-services__kind " onclick="" href="/fresh"><i class="b-services__kind-ico b-services__kind-ico_cloud"></i>Облачные сервисы</a>
+                
+                                <ul class="b-services__sublist">
+                                                                                                                    <li class="b-services__subitem ">
+                                                                <a href="/fresh" onclick="">1С:Предприятие 8 через Интернет</a>
+                            </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+            </li>
+                                <li class="b-services__item">
+                <a class="b-services__kind " onclick="" href="/hotspot"><i class="b-services__kind-ico b-services__kind-ico_wifi"></i>Wi-Fi Hotspot</a>
+                
+                                <ul class="b-services__sublist">
+                                                                                                                                                                <li class="b-services__subitem ">
+                                                                <a href="/hotspot" onclick="">Тарифы</a>
+                            </li>
+                                                                                                                                                                                        <li class="b-services__subitem ">
+                                                                <a href="/hotspot/settings" onclick="">Управление услугой</a>
+                            </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+            </li>
+                                <li class="b-services__item">
+                <a class="b-services__kind " onclick="" href="/radar"><i class="b-services__kind-ico b-services__kind-ico_wifi-radar"></i>Wi-Fi Radar</a>
+                
+                                <ul class="b-services__sublist">
+                                                                                                                                                                                                                                                        <li class="b-services__subitem ">
+                                                                <a href="/radar" onclick="">Управление услугой</a>
+                            </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+            </li>
+            </ul>
+                        <!-- История платежей -->
+                        <div class="b-doc b-page__doc">
+    <p class="b-services__item"><a href="/orderhistory/default/index?tab=active" class="b-header__chat">Заявки</a></p>
+    <p class="b-services__item b-services__sublist-second"><a href="/ppr" class="b-header__chat">Планово-профилактические работы</a></p>
+    <h3 class="b-text-h3 b-services__kind_selected_yes">Счета</h3>
+    <ul class="b-doc__list b-doc__list-ul-menu">
+		    <li class="b-services__sublist-second">
+		<a href="/index/default/PrepaymentBill?month=1" target="_blank">Авансовый счёт</a>
+	    </li>
+		<!--<li class="b-services__sublist-second">
+	    <a href="https://lkb2b.domru.ru//pdf/bill?city=samara&id_session$c=xycf0h2s09aezrkgybd2ndmiufxtta&client$c=587030&task$c=user_statistic&bill_id$i=315542199&show_point$i=0" target="_blank">Последний счёт</a>
+	</li>-->
+	<li class="b-services__sublist-second b-services__subitem_selected_yes"><a href="/docs">Документы</a></li>
+    </ul>
+
+    <h3 class="b-text-h3 ">Платежи</h3>
+    <ul class="b-doc__list b-doc__list-ul-menu">
+	<li class="b-doc__item "><a href="/payments">Платежи и начисления</a></li>
+	<li class="b-doc__item b-doc__item_type_file "><a href="/pay">Пополнение счёта</a></li>
+	<li class="b-doc__item b-doc__item_type_file "><a href="/moneybag">Обещанный платёж</a></li>
+    </ul>
+</div>
+                        <!-- Статистические отчеты, их пока нет-->
+                        <!--<div class="b-doc b-page__doc">
+    <h3 class="b-text-h3">Отчеты на печать</h3>
+    <ul class="b-doc__list">
+        <li class="b-doc__item">История платежей от 10.04... <span class="b-link-file-prop">Отчет формируется</span></li>
+        <li class="b-doc__item"><span class="b-doc__text">Телефонная статистика от какого-то числа</span><a href="bla" class="b-link_ico_yes"><i class="b-link__ico_pdf"></i>pdf</a>  <a href="bla" class="b-link_ico_yes"><i class="b-link__ico_xls"></i>xls</a></li>
+        <li class="b-doc__item"><span class="b-doc__text">Статистика по хотспотам от какого-то числа</span><a href="bla" class="b-link_ico_yes"><i class="b-link__ico_pdf"></i>pdf</a>  <a href="bla" class="b-link_ico_yes"><i class="b-link__ico_xls"></i>xls</a></li>
+        <li class="b-doc__item"><span class="b-doc__text">Статистика по интернету какого-то числа</span><a href="bla" class="b-link_ico_yes"><i class="b-link__ico_pdf"></i>pdf</a>  <a href="bla" class="b-link_ico_yes"><i class="b-link__ico_xls"></i>xls</a></li>
+        <li class="b-doc__item"><span class="b-doc__text">Статистика звонков на +7950</span><a href="bla" class="b-link_ico_yes"><i class="b-link__ico_pdf"></i>pdf</a>  <a href="bla" class="b-link_ico_yes"><i class="b-link__ico_xls"></i>xls</a></li>
+    </ul>
+</div>-->
+
+                    </div>
+                </div>
+                <div class="b-page__content-wrapper">
+                    <div class="b-page__content js-b-page__content-wrapper">
+                                                <div class="b-tarif-manage__row h-flex-jc_space-between">
+                                                        <h1 class="b-tarif-manage__title b-page__content_title b-page__content-head b-text-h1 b-antivirus__fonts h-text-transform_none js-main-title ">Документы</h1>
+                                                                                </div>
+                        <!--Сообщения-->
+                                                <form class="b-page__sform" id="docs-form" action="/docs" method="post">
+<input type="hidden" value="UTFwZlVMcVV3SDJ0YWVqd3R1NjhGdF9oV1Z5S25SRWi43FWBV8Tb9um2xiCsH5RRSvM0-8K7FcL15b1yrFyGEw==" name="YII_CSRF_TOKEN"><div>Уважаемый Клиент!
+<br>
+
+С 01.01.2021г. АО «ЭР-Телеком Холдинг» переходит на использование универсальных передаточных документов, заменяющих счет-фактуру, акт приема и сдачи услуг, при работе через электронный документооборот, по форме установленной приказом ФНС России от 19.12.2018 г. № ММВ-7-15/820@
+<br>
+При наличии вопросов просим обращаться по телефону: 8-800-333-9000.
+</div>
+<div class="b-sform b-page__sform">
+    <label class="b-sform__inp-wrapper"><span class="ie7fix">Выберите период</span><br>
+        <select class="b-sform__inp-select js-sform__period" name="DocsForm[period]" id="DocsForm_period">
+<option value="month" selected="selected">За месяц</option>
+<option value="quarter">За 3 мес.</option>
+<option value="halfyear">За полгода</option>
+<option value="any">Произвольный</option>
+</select>    </label>
+    <label class="b-sform__inp-wrapper">
+        <div>
+            <span>с</span>
+            <input class="b-sform__inp-datepicker js-sform__calendar_from hasDatepicker" name="DocsForm[date_from]" id="DocsForm_date_from" type="text" value="18.10.2021">            <span class="b-tooltip b-tooltip_error b-sform__tooltip">
+                <i class="b-tooltip__content"><div class="errorMessage" id="DocsForm_date_from_em_" style="display:none"></div></i>
+                <i class="b-tooltip__tail"></i>
+            </span>
+            <i class="b-sform__inp-datepicker-pic"></i>
+        </div>
+    </label>
+    <label style="margin-right: 15px" class="b-sform__inp-wrapper">
+        <div>
+            <span>до</span>
+            <input class="b-sform__inp-datepicker js-sform__calendar_to hasDatepicker" name="DocsForm[date_to]" id="DocsForm_date_to" type="text" value="18.11.2021">            <span class="b-tooltip b-tooltip_error b-sform__tooltip">
+                <i class="b-tooltip__content"><div class="errorMessage" id="DocsForm_date_to_em_" style="display:none"></div></i>
+                <i class="b-tooltip__tail"></i>
+            </span>
+            <i class="b-sform__inp-datepicker-pic"></i>
+        </div>
+    </label>
+    <label class="b-sform__inp-wrapper"><span class="ie7fix">Укажите номер</span><br>
+        <div>
+            <input name="DocsForm[number]" id="DocsForm_number" type="text">            <span class="b-tooltip b-tooltip_error b-sform__tooltip">
+                <i class="b-tooltip__content"><div class="errorMessage" id="DocsForm_number_em_" style="display:none"></div></i>
+                <i class="b-tooltip__tail"></i>
+            </span>
+        </div>
+    </label>
+    <label class="b-sform__inp-wrapper"><span class="ie7fix">Тип документа</span><br>
+        <div>
+            <select class="b-sform__inp-select" name="DocsForm[type]" id="DocsForm_type">
+<option value="0" selected="selected">Все</option>
+<option value="1">Счет</option>
+<option value="2">Счет-фактура</option>
+<option value="3">Акт</option>
+</select>            <span class="b-tooltip b-tooltip_error b-sform__tooltip">
+                <i class="b-tooltip__content"><div class="errorMessage" id="DocsForm_type_em_" style="display:none"></div></i>
+                <i class="b-tooltip__tail"></i>
+            </span>
+        </div>
+    </label>
+    <nobr>
+        <input class="b-button b-sform__button js-confirm-button" type="submit" name="yt0" value="Показать">    </nobr>
+    <div class="error-text-for-docs-page js-error-text-for-date" hidden="">Уважаемый клиент, максимальный период за который можно запросить документы ограничен полугодом.</div>
+
+</div>
+
+
+
+    <h2 class="b-text-h2">Документы за период</h2>
+
+    <table class="b-table b-page__table">
+        
+            <thead class="b-table__thead">
+                <tr>
+                    <th>Номер документа</th>
+                    <th>Документ</th>
+                    <th>Дата</th>
+                    <th style="text-align: left">Сумма</th>
+                    <th>Заказать дубликат</th>
+                    <th>Отчетный период</th>
+                </tr>
+            </thead>
+            <tbody class="b-table__tbody">
+                                                        <tr>
+                        <td>315542199</td>
+                        <td>
+                                                    <a target="_blank" href="/docs/default/getDoc?bucket=bills-rias&amp;path=RIAS_SAM_P%2F102021%2F315542199_BILL.pdf&amp;name=%D0%A1%D1%87%D0%B5%D1%82+315542199+%D0%BE%D1%82+31.10.2021+%D0%BF%D0%BE+%D0%94%D0%BE%D0%B3.+%D0%957759963">Счет</a>                                                </td>
+                        <td>01.11.2021</td>
+                        <td class="b-table__last-cell">26086.75&nbsp;₽</td>
+                        <td style="text-align: center">
+                                                            <input id="ytDocsForm_duplicate_docs_315542199_1" type="hidden" value="0" name="DocsForm[duplicate_docs][315542199_1]"><input class="popup_duplicate duplicate_docs_checkbox" name="DocsForm[duplicate_docs][315542199_1]" id="DocsForm_duplicate_docs_315542199_1" value="1" type="checkbox">
+                                <div class="b-tooltip" style="visibility: visible; position: absolute; display: none; opacity: 2;">
+                                    <div class="b-text b-tooltip__text">
+                                        <p>
+                                                                                            Заказов не было
+                                                                                                                                </p>
+                                    </div>
+                                </div>
+
+                                                    </td>
+                        <td>
+                            октябрь 2021                        </td>
+                    </tr>
+                                                                            <tr>
+                        <td>315542199/93685</td>
+                        <td>
+                                                    <a target="_blank" href="/docs/default/getDoc?bucket=bills-rias&amp;path=RIAS_SAM_P%2F102021%2F315542199%2F93685_INVOICE.pdf&amp;name=%D0%A1%D1%87%D0%B5%D1%82-%D1%84%D0%B0%D0%BA%D1%82%D1%83%D1%80%D0%B0+6402451488%2F17+%D0%BE%D1%82+31.10.2021+%D0%BF%D0%BE+%D0%94%D0%BE%D0%B3.+%D0%957759963">Счет-фактура</a>                                                </td>
+                        <td>31.10.2021</td>
+                        <td class="b-table__last-cell">26086.75&nbsp;₽</td>
+                        <td style="text-align: center">
+                                                            <input id="ytDocsForm_duplicate_docs_315542199_2" type="hidden" value="0" name="DocsForm[duplicate_docs][315542199_2]"><input class="popup_duplicate duplicate_docs_checkbox" name="DocsForm[duplicate_docs][315542199_2]" id="DocsForm_duplicate_docs_315542199_2" value="1" type="checkbox">
+                                <div class="b-tooltip" style="visibility: visible; position: absolute; display: none; opacity: 2;">
+                                    <div class="b-text b-tooltip__text">
+                                        <p>
+                                                                                            Заказов не было
+                                                                                                                                </p>
+                                    </div>
+                                </div>
+
+                                                    </td>
+                        <td>
+                            октябрь 2021                        </td>
+                    </tr>
+                                                                            <tr>
+                        <td></td>
+                        <td>
+                                                    <a target="_blank" href="/docs/default/getDoc?bucket=bills-rias&amp;path=RIAS_SAM_P%2F102021%2F315542199%2F93685_ACT.pdf&amp;name=%D0%90%D0%BA%D1%82+%D0%BF%D1%80%D0%B8%D0%B5%D0%BC%D0%B0-%D1%81%D0%B4%D0%B0%D1%87%D0%B8+6402451488%2F17+%D0%BE%D1%82+31.10.2021+%D0%BF%D0%BE+%D0%94%D0%BE%D0%B3.+%D0%957759963">Акт</a>                                                </td>
+                        <td>31.10.2021</td>
+                        <td class="b-table__last-cell">26086.75&nbsp;₽</td>
+                        <td style="text-align: center">
+                                                            <input id="ytDocsForm_duplicate_docs_315542199_3" type="hidden" value="0" name="DocsForm[duplicate_docs][315542199_3]"><input class="popup_duplicate duplicate_docs_checkbox" name="DocsForm[duplicate_docs][315542199_3]" id="DocsForm_duplicate_docs_315542199_3" value="1" type="checkbox">
+                                <div class="b-tooltip" style="visibility: visible; position: absolute; display: none; opacity: 2;">
+                                    <div class="b-text b-tooltip__text">
+                                        <p>
+                                                                                            Заказов не было
+                                                                                                                                </p>
+                                    </div>
+                                </div>
+
+                                                    </td>
+                        <td>
+                            октябрь 2021                        </td>
+                    </tr>
+                                                    <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td style="text-align: center">
+                        <input class="b-square-button b-button-duplicatedocs" disabled="disabled" name="yt1" type="button" value="Заказать">                    </td>
+                </tr>
+            </tbody>
+
+            </table>
+
+
+<div id="b-popup__dublicate-docs" class="b-popup b-popup__type-blue">
+    <div class="b-popup__container" data-width="550px">
+        <div class="b-popup__close"></div>
+        <div class="b-popup__head">Контактные данные</div>
+        <div class="b-popup__content">
+
+            <div class="b-request-manager__popup-form-item">
+                <label class="b-request-manager__popup-label">Адрес получения дубликата</label>
+                <div class="b-request-manager__popup-form-content" id="js-select-phone">
+                    620075 Екатеринбург, Ленина Пр-Кт, 50 / б                </div>
+            </div>
+
+            <div class="b-request-manager__popup-form-item">
+                <label class="b-request-manager__popup-label">Выберите телефон для связи</label>
+                <div class="b-request-manager__popup-form-content" id="js-select-phone">
+                    <select class="b-sform__inp-select" id="phone_select" name="DocsForm[phone]">
+<option value="79272694093">79272694093</option>
+<option value="79226161002">79226161002</option>
+<option value="not">Указать свой номер телефона</option>
+</select>                    <span class="b-tooltip b-tooltip_error b-sform__tooltip">
+                        <i class="b-tooltip__content"><div class="errorMessage" id="DocsForm_phone_em_" style="display:none"></div></i>
+                        <i class="b-tooltip__tail"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="b-request-manager__popup-form-item js-my-phone" style="display: none; ">
+                <label class="b-request-manager__popup-label">Мой номер телефона</label>
+                <div class="b-request-manager__popup-form-content">
+                    <input class="js-blacklist-phone-field b-sform__inp-num b-masked-input js-my-phone-text" placeholder="+7 (___) ___-__-__" name="DocsForm[myphone]" id="DocsForm_myphone" type="text">                    <span class="b-tooltip b-tooltip_error b-sform__tooltip">
+                        <i class="b-tooltip__content"><div class="errorMessage" id="DocsForm_myphone_em_" style="display:none"></div></i>
+                        <i class="b-tooltip__tail"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="b-request-manager__popup-form-item">
+                <label class="b-request-manager__popup-label">Дополнительная информация</label>
+                <div class="b-request-manager__popup-form-content">
+                    <div>
+                        <textarea class="b-request-manager__popup-form-textarea" name="DocsForm[comment]" id="DocsForm_comment"></textarea>                        <span class="b-tooltip b-tooltip_error b-sform__tooltip">
+                            <i class="b-tooltip__content"><div class="errorMessage" id="DocsForm_comment_em_" style="display:none"></div></i>
+                            <i class="b-tooltip__tail"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <input name="DocsForm[is_send_add_docs]" id="DocsForm_is_send_add_docs" type="hidden" value="0">
+            <div class="b-request-manager__popup-form-item">
+                <div class="b-request-manager__popup-form-content">
+                    <button type="submit" class="b-button" id="duplicatedocs_button" name="is_send_add_docs" value="1">Заказать</button>                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</form>                        <br>
+                        
+    <div class="b-page__text b-text">
+        <h2>Как это работает</h2>
+        <p>В данном разделе Вы можете просмотреть  счета на оплату услуг связи, счета-фактуры, акты приема и сдачи услуг.</p>
+<ul>
+<li>Выберите интересующий Вас временной интервал.</li>
+<li>Можете указать номер документа, если он Вам известен.</li>
+<li>При необходимости выберите интересующий Вас тип документа.</li>
+<li>Подтвердите свой выбор, нажав кнопку «Показать»</li>
+<p>В таблице отобразится список документов за указанный Вами период.</p>
+</ul>
+<p>Вы можете заказать дубликат документа:</p>
+<ul>
+<li>Поставьте отметку напротив нужного вам документа в колонке «Заказать дубликат».</li>
+<li>Нажмите кнопку «Заказать»</li>
+<li>В открывшемся окне укажите контактные данные и подтвердите заказ.
+Заявка будет обработана в течение 1 рабочего дня Вашим персональным менеджером.</li>
+</ul>    </div>
+						    <a href="https://b2b.domru.ru/amocrm/">
+        <img src="//console.ertelecom.ru/files/upload/b/7/e/b7eb2f74d8b6c2eaba311eddf04ff58c.jpg" class="b-image b-image_full">
+    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Подвал -->
+                <div id="b-popup__detail_replenish" class="b-popup">
+    <div class="b-popup__close js-popup__close"></div>
+    <div class="b-popup__head">Детализация балансов</div>
+    <div class="b-popup__content">
+                    <table class="b-table b-page__table">
+                <tbody class="b-table__tbody">
+                                            <tr>
+                            <td colspan="2">АО «ЭР-Телеком» Е7759963</td>
+                            <td colspan="2">0,00</td>
+                        </tr>
+                                            <tr>
+                            <td colspan="2">Авансовый платеж за ноябрь</td>
+                            <td colspan="2">26 086,75</td>
+                        </tr>
+                                        <tr>
+                        <td colspan="2"><b>Итого к оплате: </b></td>
+                        <td colspan="2"><b>26086.75</b></td>
+                    </tr>
+                                          <tr>
+                        <td colspan="3">
+                          <a href="/pay" class="b-button_float_right">Оплатить картой</a>
+                        </td>
+                      </tr>
+                                    </tbody>
+            </table>
+                            <div class="b-sform__text">
+            <span><b>Примечание:</b> распечатать счета, счет-фактуры и акты вы можете в разделе </span>
+            <a href="/docs">Документы</a>
+        </div>
+    </div></div>
+        <div class="b-page__footer b-footer"><img src="/blocks/b-footer/b-footer__shadow.jpg" alt="" class="b-footer__shadow">
+    <div class="b-footer__main-wrapper">
+        <div class="b-footer__info">
+            <p class="b-footer__vacancy">
+                <a target="_blank" href="//samara.domru.ru" class="b-link">Дом.ru</a><br>
+                <a target="_blank" href="//samara.b2b.domru.ru" class="b-link">Дом.ru Бизнес</a><br>
+                <a target="_blank" href="//rabotavdomru.ru/?city=samara" class="b-link">Вакансии </a>
+            </p>
+            <p><span class="b-footer__info-termin">Отдел продаж</span><b>8-800-333-9000</b> (звонок бесплатный)</p>
+                            <p><span class="b-footer__info-termin">Информационно-справочный центр</span><b>+7(846) 202-88-97</b></p>
+                    </div>
+    </div>
+    <div class="b-footer__copyright">
+        <p itemprop="name">АО «ЭР-Телеком Холдинг»</p>
+        <p itemprop="address">Фактический адрес: ул. Партизанская 86</p><br>
+    </div>
+</div>	<div class="chat" id="chatMainWindow">
+    <div class="chat__header">
+        <div class="chat__header-sound_on" id="chatSoundOnButton" onclick="toggleChatSound()"></div>
+        <div class="chat__header-sound_off" id="chatSoundOffButton" onclick="toggleChatSound()"></div>
+        <div class="chat__header-font-minus" id="chatFontMinusButton" onclick="fontZoomOut()"></div>
+        <div class="chat__header-font-plus" id="chatFontPlusButton" onclick="fontZoomIn()"></div>
+        <div class="chat__header-close" id="chatCloseButton" onclick="chatMarkShowQuesionUp()"></div>
+    </div>
+    <div class="chat__mark" id="chatMark">
+        <table class="chat__mark-table" id="chatMarkTable">
+            <tbody><tr class="chat__mark-table-offset" id="chatMarkTableOffset">
+                <td>&nbsp;</td>
+            </tr>
+            <tr class="chat__mark-table-agent-info" id="chatMarkAgentInfo">
+                <td>
+                    <img class="chat__mark-agent-avatar" id="chatMarkAgentAvatar">
+                    <span class="chat__mark-agent-nickname" id="chatMarkAgentNickName"></span>
+                </td>
+            </tr>
+            <tr class="chat__mark-table-row" id="chatMarkCsi">
+                <td class="chat__mark-table-title">
+                    <span class="chat__mark-table-blue-link" id="chatMarkTitleText" onclick="openMark()"></span>
+                    <div class="chat__mark-table-favorites" id="chatMarkFavorites">
+                        <div class="chat__mark-favorite-outline" id="chatMarkFavorite1" onclick="setCsi(1)" style="top: 0px; left: 0px;"></div>
+                        <div class="chat__mark-favorite-outline" id="chatMarkFavorite2" onclick="setCsi(2)" style="top: 0px; left: 28px;"></div>
+                        <div class="chat__mark-favorite-outline" id="chatMarkFavorite3" onclick="setCsi(3)" style="top: 0px; left: 56px;"></div>
+                        <div class="chat__mark-favorite-outline" id="chatMarkFavorite4" onclick="setCsi(4)" style="top: 0px; left: 84px;"></div>
+                        <div class="chat__mark-favorite-outline" id="chatMarkFavorite5" onclick="setCsi(5)" style="top: 0px; left: 112px;"></div>
+                    </div>
+                </td>
+            </tr>
+            <tr class="chat__mark-table-row" id="chatMarkCommentRow">
+                <td>
+                    <div class="chat__mark-comment-area">
+                        <textarea class="chat__mark-comment-area-message" id="chatMarkComment" placeholder="Напишите свой комментарий..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Напишите свой комментарий...'"></textarea>
+                    </div>
+                </td>
+            </tr>
+            <tr class="chat__mark-table-row" id="chatMarkSendButton">
+                <td>
+                    <div class="chat__mark-table-blue-link" id="chatMarkSendTitle" onclick="sendMark()"></div>
+                </td>
+            </tr>
+            <tr class="chat__mark-table-row" id="chatMarkCancelButton">
+                <td>
+                    <span class="chat__mark-table-red-link" onclick="cancelMark()" id="markCancelTitle"></span>
+                </td>
+            </tr>
+        </tbody></table>
+    </div>
+    <div class="chat__mark-question" id="chatMarkQuestion">
+        <table class="chat__mark-table" id="chatMarkQuestionTable">
+            <tbody><tr class="chat__mark-table-row" id="chatMarkQuestionTitle">
+                <td>
+                    <span class="chat__mark-question-title-text" id="chatMarkQuestionTitleText"></span>
+                </td>
+            </tr>
+            <tr class="chat__mark-table-row">
+                <td>
+                    <div class="chat__mark-table-yesno-box">
+                        <table class="chat__mark-table-yesno-box-table">
+                            <tbody><tr>
+                                <td class="chat__mark-table-yesno-box-table-cell-yes">
+                                    <span class="chat__mark-table-yesno-box-table-blue-link" onclick="openMarkFormOnFullWindows(1)">Да</span>
+                                </td>
+                                <td class="chat__mark-table-yesno-box-table-cell-no">
+                                    <span class="chat__mark-table-yesno-box-table-blue-link" onclick="openMarkFormOnFullWindows(0)">Нет</span>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+                </td>
+            </tr>
+            <tr class="chat__mark-table-row" id="chatMarkQuestionBack">
+                <td>
+                    <span class="chat__mark-table-red-link" onclick="chatMarkQuestionReturnDialog()">Вернуться к диалогу</span>
+                </td>
+            </tr>
+        </tbody></table>
+    </div>
+    <div id="workingArea" class="chat__working-area">
+        <div id="chatingHistory" class="chat__chating-history" ondragenter="event.stopPropagation();event.preventDefault();onDragEnterChatingHistory();" ondragleave="event.stopPropagation();event.preventDefault();onDragLeaveChatingHistory();">
+
+            <table id="messageTable" class="chat__chating-history-table" ondragenter="event.stopPropagation();event.preventDefault();onDragEnterChatingHistory();" ondragleave="event.stopPropagation();event.preventDefault();onDragLeaveChatingHistory();"></table>
+        </div>
+        <div id="dropFileArea" class="chat__chating-history-drop-file-area" ondragenter="event.stopPropagation();event.preventDefault();onDragEnterFileArea();" ondragleave="event.stopPropagation();event.preventDefault();onDragLeaveFileArea();" ondragover="event.stopPropagation();event.preventDefault();" ondrop="event.stopPropagation();event.preventDefault();doDropFile(event);">
+            Перетащите файлы
+        </div>
+    </div>
+    <div id="socialNetwork" class="chat__social-network">
+        <table class="chat__social-network-table" id="socialNetworkTable">
+            <tbody>
+                <tr>
+                    <td class="chat__social-network-title" id="socialNetworkTitle"></td>
+                </tr>
+                <tr>
+                    <td class="chat__social-network-text"><span id="socialNetworkText"></span></td>
+                </tr>
+                <tr>
+                    <td class="chat__social-network-links">
+                        <table class="chat__social-network-links-table">
+                            <tbody><tr>
+                                <td class="chat__social-network-viber" onclick="goToSocialNetwork('viber://pa?chatURI=dom.ru')"></td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="chat__social-network-feedback-link" onclick="goToFeedback()">Перейти к форме обратной связи</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="chat__input-area" id="chatInputArea">
+        <div class="chat__input-area-upload">
+            <input id="uploadFile" type="file" class="chat__input-area-upload-input" multiple="">
+        </div>
+        <div class="chat__input-area-text-area">
+            <textarea class="chat__input-area-text-area-input-message" id="chatInputMessage" placeholder="Введите сообщение..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введите сообщение...'"></textarea>
+        </div>
+        <div class="chat__input-area-send" id="sendButton" onclick="chatSendMessage()"></div>
+        <div class="chat__input-area-resize-input-area" id="chatInputAreaResize"></div>
+    </div>
+    <div class="chat__file-error-message" id="chatFileErrorMessageBlock">
+        <table class="chat__file-error-message-table">
+            <tbody><tr class="chat__file-error-message-table-row" id="chatFileErrorMessageTitle">
+                <td>
+                    <span class="chat__file-error-message-title-text" id="chatFileErrorMessageTitleText"></span>
+                </td>
+            </tr>
+            <tr class="chat__file-error-message-table-row-message" id="chatFileErrorMessage">
+                <td class="chat__file-error-message-text" id="chatFileErrorMessageText"></td>
+            </tr>
+            <tr class="chat__file-error-message-table-row" id="chatFileErrorMessageButton">
+                <td>
+                    <span class="chat__file-error-message-table-red-link" onclick="hideChatFileErrorMessage()">Закрыть</span>
+                </td>
+            </tr>
+        </tbody></table>
+    </div>
+    <div class="chat__resize" id="chatResize">
+    </div>
+
+    <audio id="soundNotification" src="/sound/message_notification.mp3" preload="none"></audio>
+
+    <input type="hidden" id="gmsCometdUrl" value="https://genesys.domru.ru/web_chat/genesys/cometd">
+    <input type="hidden" id="chatChannel" value="/service/chatV2/web_chat_b2b">
+    <input type="hidden" id="gmsCometdFileUrl" value="https://genesys.domru.ru/web_chat/genesys/2/chat-ntf">
+    <input type="hidden" id="avatarUrl" value="https://genesys.domru.ru/avatar-client/avatar?nickName=">
+    <input type="hidden" id="isGuest" value="">
+    <input type="hidden" id="additionalTokenUrl" value="/get-aditional-token">
+    <input type="hidden" id="agentWaitingTimeMethodUrl" value="https://genesys.domru.ru/genesys/1/internal_statistic">
+    <input type="hidden" id="historyMethodUrl" value="https://genesys.domru.ru/ucs-history/v1/interactions">
+    <input type="hidden" id="csiMethodUrl" value="https://genesys.domru.ru/genesys/2/openmedia/csi">
+    <input type="hidden" id="cityDomain" value="samara">
+    <input type="hidden" id="cityId" value="2">
+    <input type="hidden" id="clientType" value="b2b">
+    <input type="hidden" id="minAgentWaitingTime" value="15">
+    <input type="hidden" id="maxAgentWaitingTime" value="300">
+    <input type="hidden" id="chatType" value="">
+    <input type="hidden" id="chatSidUrl" value="https://genesys.domru.ru/addModules/genChatSid">
+</div>
+
+<div class="service js-service service_twitch" style="bottom: 24px;">
+    <div class="chat__viber-icon js-chat-viber"><img src="/images/viber.svg"></div>
+    <a class="chat__tg-icon" href="https://t.me/DomruBusinessBot" target="_blank"><img src="/images/telegram.png"></a>
+    
+    <div class="service__wrapper js-consultant_link">
+        <a class="service__item service__item_main" data-popover="true">
+            <div class="icon icon icon_service-question service__icon service__icon_main"></div>
+        </a>
+        <div class="service__label">
+            Онлайн-консультант
+        </div>
+    </div>
+</div>
+
+<div class="chat__viber-modal js-viber-modal" style="text-align: left;display: none">
+    <div class="chat__viber-modal-wr">
+        <div>
+            <strong style="font-size: 20px;">Чтобы написать в Viber чат:</strong>
+            <br>
+            <p>1. Откройте Viber на смартфоне &nbsp; <img src="/images/viber.png" class="chat__viber-modal-icon"></p>
+            <p>2. Откройте меню "Ещё" &nbsp; <img src="/images/viber-more.png" class="chat__viber-modal-icon"></p>
+            <p>3. Откройте QR-сканер и отсканируйте код &nbsp; <img src="/images/viber-qr-min.png" class="chat__viber-modal-icon"></p>
+            <br>
+            <div class="chat__viber-modal-button">
+                <a href="viber://pa?chatURI=dom.ru_business">
+                    <img src="/images/viber-button.png" class="chat__viber-button-img">
+                </a>
+            </div>
+        </div>
+        <div>
+            <img src="/images/qr-viber.png" class="chat__viber-qr-img">
+        </div>
+    </div>
+</div>
+<div class="chat__viber-modal-backdrop js-viber-modal-backdrop" style="display: none"></div>
+        <div id="b-popup__letter" class="b-popup b-popup__type-blue js-b-popup-letter">
+    <div class="b-popup__container js-director-form-content" data-width="550px">
+        <div class="b-popup__close js-director-form-close"></div>
+        <div class="b-popup__head">
+            Написать директору<br>Дом.ru Бизнес
+        </div>
+        <div class="b-popup__content">
+            <form class="b-popup-letter__form pb40 js-b-popup-letter-form" id="DirectorForm" action="/docs" method="post">
+<input type="hidden" value="UTFwZlVMcVV3SDJ0YWVqd3R1NjhGdF9oV1Z5S25SRWi43FWBV8Tb9um2xiCsH5RRSvM0-8K7FcL15b1yrFyGEw==" name="YII_CSRF_TOKEN">
+            <input name="DirectorForm[problemClassId]" id="DirectorForm_problemClassId" type="hidden">
+            <div class="b-request-manager__popup-form-item">
+                <label class="b-request-manager__popup-label">Точка подключения</label>
+                <div class="b-request-manager__popup-form-content">
+                    <div>
+                        <select class="b-popup-letter__data-fields-input b-popup-letter__data-fields-input_connect-point" name="DirectorForm[houseId]" id="DirectorForm_houseId">
+<option value="53938">Комсомольская, 27 / а</option>
+<option value="68437">Маршала Жукова, 319 / а</option>
+<option value="597738">Рощинский П, 1 / у</option>
+<option value="1020234">Воинская Ул, 13</option>
+<option value="1077226">Гидротурбинная, 391 / а</option>
+</select>                        <div class="b-popup-letter__error-massege b-popup-letter__error-massege_demo" style="margin:0;display:none" id="DirectorForm_houseId_em_"></div>                    </div>
+                </div>
+            </div>
+
+            <div class="b-request-manager__popup-form-item">
+                <label class="b-request-manager__popup-label">Контактное лицо</label>
+                <div class="b-request-manager__popup-form-content">
+                    <div>
+                        <input class="b-popup-letter__data-fields-input" name="DirectorForm[contact]" id="DirectorForm_contact" type="text">                        <div class="b-popup-letter__error-massege b-popup-letter__error-massege_demo" style="margin:0;display:none" id="DirectorForm_contact_em_"></div>                    </div>
+                </div>
+            </div>
+
+            <div class="b-request-manager__popup-form-item">
+                <label class="b-request-manager__popup-label">Должность</label>
+                <div class="b-request-manager__popup-form-content">
+                    <div>
+                        <input class="b-popup-letter__data-fields-input" name="DirectorForm[position]" id="DirectorForm_position" type="text">                        <div class="b-popup-letter__error-massege b-popup-letter__error-massege_demo" style="margin:0;display:none" id="DirectorForm_position_em_"></div>                    </div>
+                </div>
+            </div>
+
+            <div class="b-request-manager__popup-form-item">
+                <label class="b-request-manager__popup-label">Эл.почта</label>
+                <div class="b-request-manager__popup-form-content">
+                    <div>
+                        <input class="b-popup-letter__data-fields-input" name="DirectorForm[email]" id="DirectorForm_email" type="text">                        <div class="b-popup-letter__error-massege b-popup-letter__error-massege_demo" style="margin:0;display:none" id="DirectorForm_email_em_"></div>                    </div>
+                </div>
+            </div>
+
+            <div class="b-request-manager__popup-form-item">
+                <label class="b-request-manager__popup-label">Телефон</label>
+                <div class="b-request-manager__popup-form-content">
+                    <div>
+                        <input class="js-director-form-phone b-popup-letter__data-fields-input b-masked-input" placeholder="+7 (___) ___-__-__" name="DirectorForm[phone]" id="DirectorForm_phone" type="text">                        <div class="b-popup-letter__error-massege b-popup-letter__error-massege_demo" style="margin:0;display:none" id="DirectorForm_phone_em_"></div>                    </div>
+                </div>
+            </div>
+
+            <div class="b-request-manager__popup-form-item">
+                <label class="b-request-manager__popup-label">Сообщение</label>
+                <div class="b-request-manager__popup-form-content">
+                    <div>
+                        <textarea class="b-popup-letter__textarea-field" name="DirectorForm[message]" id="DirectorForm_message"></textarea>                        <div class="b-popup-letter__error-massege b-popup-letter__error-massege_demo" style="margin:0;display:none" id="DirectorForm_message_em_"></div>                    </div>
+                </div>
+            </div>
+
+            <div>
+                Благодарим за обращение! Мы свяжемся с Вами в ближайшее время<br><br>
+            </div>
+
+            <div class="b-request-manager__popup-form-item">
+                <div class="b-request-manager__popup-form-content">
+                    <input class="b-button js-b-letter-submit" type="submit" name="yt2" value="Отправить">                </div>
+            </div>
+
+            <div>
+                <a class="b-telstat__psevdo-link js-b-popup-letter__info-link">
+                    Нажимая на кнопку вы соглашаетесь на обработку данных
+                </a><i class="b-telstat__dir-ico"></i>
+                <p class="b-popup-letter__info-text-hidden js-b-popup-letter__info-text-hidden">
+                    Абонент подтверждает и&nbsp;гарантирует наличие в&nbsp;соответствии
+                    со&nbsp;ст. 9&nbsp;ФЗ от&nbsp;27 .07.2006 года
+                    №&nbsp;152-ФЗ «О&nbsp;персональных данных»,
+                    согласия вышеуказанных лиц, на&nbsp;передачу и&nbsp;обработку их&nbsp;персональных данных
+                    АО&nbsp;«ЭР-Телеком Холдинг» с&nbsp;целью взаимодействия
+                    по&nbsp;договору на&nbsp;предоставление услуг связи для автоматизированной,
+                    а&nbsp;также без использования средств автоматизации обработки персональных данных путём:
+                    сбора, записи, систематизации, накопления, хранения, уточнения (обновление, изменение),
+                    извлечения, использования, передачи (предоставление, доступ), обезличивания, блокирования,
+                    удаления, уничтожения персональных данных в&nbsp;течение всего срока действия договора
+                    на&nbsp;предоставление услуг связи.
+                </p>
+            </div>
+            </form>        </div>
+    </div>
+</div>
+<div id="b-popup__answer" class="b-popup b-popup__type-blue">
+    <div class="b-popup__container" data-width="550px">
+        <div class="b-popup__close js-director-form-close"></div>
+        <div class="b-popup__head js-form-director-result-success">Сообщение отправлено</div>
+        <div class="b-popup__content js-form-director-result-success">
+            <p class="b-popup-answer__paragraph js-form-director-result-success-text"></p>
+        </div>
+        <div class="b-popup__head js-form-director-result-error">Произошла ошибка</div>
+        <div class="b-popup__content js-form-director-result-error">
+            <p class="b-popup-answer__paragraph">
+                Уважаемый клиент, к сожалению, при отправке формы возникла техническая ошибка.
+                Пожалуйста, заполните и отправьте форму еще раз.
+                Приносим свои извинения.
+            </p>
+        </div>
+    </div>
+</div>        <div class="trobber-global js-trobber-global h-display_none">
+            <ul class="loader large trobber-global__content">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    <script type="text/javascript" src="/assets/10ac72d1/jquery.cookie.js"></script>
+<script type="text/javascript" src="/assets/e3319404/script.js"></script>
+<script type="text/javascript" src="/assets/eadfc1ff/app.js"></script><div id="b-popup__contacts-password" class="b-popup js-popup__contacts-password"><div class="b-popup__container js-popup__contacts-password__container"><div class="b-popup__close js-popup__contacts-password__close"></div><div class="b-popup__head js-popup__contacts-password__head"></div><div class="b-popup__content js-popup__contacts-password__content"></div></div></div>
+<script type="text/javascript" src="/assets/6e4d9026/docs.js"></script>
+<script type="text/javascript" src="/assets/3106147/director.js"></script>
+<script type="text/javascript" src="/assets/69532522/header.js"></script>
+<script type="text/javascript" src="/assets/d0a90c9a/cometd.js"></script>
+<script type="text/javascript" src="/assets/d0a90c9a/jquery.cometd.js"></script>
+<script type="text/javascript" src="/assets/d0a90c9a/js.cookie.js"></script>
+<script type="text/javascript" src="/assets/d0a90c9a/circle-progress.js"></script>
+<script type="text/javascript" src="/assets/661077d8/chat.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+function sendParamsForYandexMetric(module, section, events) {
+                    var str = "var params =" + "{'" + module + "': {'" + section + "' : '" + events + "'}}";
+                    eval(str);
+                    yaCounter22385650.params(params)
+                };
+                
+jQuery(function($) {
+
+                jQuery("body").ajaxComplete(
+                    function(event, request, options) {
+                        if (request.responseText == "YII_LOGIN_REQUIRED") {
+                            window.location.reload(true);
+                        }
+                    }
+                );
+jQuery('#docs-form').yiiactiveform({'validateOnChange':true,'validateOnType':true,'validateOnSubmit':true,'validationDelay':0,'errorCssClass':'b\x2Dsform__inp_error','attributes':[{'id':'DocsForm_date_from','inputID':'DocsForm_date_from','errorID':'DocsForm_date_from_em_','model':'DocsForm','name':'date_from','enableAjaxValidation':false,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("\u041d\u0435 \u0443\u043a\u0430\u0437\u0430\u043d\u0430 \u0414\u0430\u0442\u0430 \u043d\u0430\u0447\u0430\u043b\u0430 \u0432\u044b\u0431\u043e\u0440\u043a\u0438");
+}
+
+}},{'id':'DocsForm_date_to','inputID':'DocsForm_date_to','errorID':'DocsForm_date_to_em_','model':'DocsForm','name':'date_to','enableAjaxValidation':false,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("\u041d\u0435 \u0443\u043a\u0430\u0437\u0430\u043d\u0430 \u0414\u0430\u0442\u0430 \u043e\u043a\u043e\u043d\u0447\u0430\u043d\u0438\u044f \u0432\u044b\u0431\u043e\u0440\u043a\u0438");
+}
+
+}},{'id':'DocsForm_number','inputID':'DocsForm_number','errorID':'DocsForm_number_em_','model':'DocsForm','name':'number','enableAjaxValidation':false,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)!='' && !value.match(/^[0-9_a-zа-я]{0,20}$/i)) {
+	messages.push("\u041d\u0435\u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u0444\u043e\u0440\u043c\u0430\u0442 \u043d\u043e\u043c\u0435\u0440\u0430 \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430");
+}
+
+}},{'id':'DocsForm_type','inputID':'DocsForm_type','errorID':'DocsForm_type_em_','model':'DocsForm','name':'type','enableAjaxValidation':false,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)!='') {
+	
+if(!value.match(/^\s*[+-]?\d+\s*$/)) {
+	messages.push("\u041d\u0435\u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u0442\u0438\u043f \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430");
+}
+
+if(value<0) {
+	messages.push("Type is too small (minimum is 0).");
+}
+
+}
+
+}},{'id':'DocsForm_phone','inputID':'DocsForm_phone','errorID':'DocsForm_phone_em_','model':'DocsForm','name':'phone','enableAjaxValidation':false},{'id':'DocsForm_myphone','inputID':'DocsForm_myphone','errorID':'DocsForm_myphone_em_','model':'DocsForm','name':'myphone','enableAjaxValidation':false,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)!='' && !value.match(/^(\+7) \((\d{3})\) (\d{3})-(\d{2})-(\d{2})$|^(?!\+7)^([0-9]{10})$/i)) {
+	messages.push("\u041d\u043e\u043c\u0435\u0440 \u0438\u043c\u0435\u0435\u0442 \u043d\u0435\u043a\u043e\u0440\u0440\u0435\u043a\u0442\u043d\u044b\u0439 \u0444\u043e\u0440\u043c\u0430\u0442.");
+}
+
+}},{'id':'DocsForm_comment','inputID':'DocsForm_comment','errorID':'DocsForm_comment_em_','model':'DocsForm','name':'comment','enableAjaxValidation':false,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)!='') {
+	
+if(value.length>250) {
+	messages.push("\u041a\u043e\u043c\u043c\u0435\u043d\u0442\u0430\u0440\u0438\u0439 \u043d\u0435 \u043c\u043e\u0436\u0435\u0442 \u0441\u043e\u0434\u0435\u0440\u0436\u0430\u0442\u044c \u0431\u043e\u043b\u044c\u0448\u0435 250 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432");
+}
+
+}
+
+}}],'errorCss':'error'});
+jQuery('#DirectorForm').yiiactiveform({'validateOnSubmit':true,'validateOnChange':true,'validateOnType':true,'validationDelay':0,'attributes':[{'id':'DirectorForm_houseId','inputID':'DirectorForm_houseId','errorID':'DirectorForm_houseId_em_','model':'DirectorForm','name':'houseId','enableAjaxValidation':false,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("\u041e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u043e \u043a \u0437\u0430\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u044e");
+}
+
+
+if(jQuery.trim(value)!='') {
+	
+if(!value.match(/^\s*[+-]?\d+\s*$/)) {
+	messages.push("House Id must be an integer.");
+}
+
+}
+
+}},{'id':'DirectorForm_contact','inputID':'DirectorForm_contact','errorID':'DirectorForm_contact_em_','model':'DirectorForm','name':'contact','enableAjaxValidation':false,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("\u041e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u043e \u043a \u0437\u0430\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u044e");
+}
+
+}},{'id':'DirectorForm_position','inputID':'DirectorForm_position','errorID':'DirectorForm_position_em_','model':'DirectorForm','name':'position','enableAjaxValidation':false,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("\u041e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u043e \u043a \u0437\u0430\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u044e");
+}
+
+}},{'id':'DirectorForm_email','inputID':'DirectorForm_email','errorID':'DirectorForm_email_em_','model':'DirectorForm','name':'email','enableAjaxValidation':false,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("\u041e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u043e \u043a \u0437\u0430\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u044e");
+}
+
+
+
+if(jQuery.trim(value)!='' && !value.match(/^[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/)) {
+	messages.push("\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043a\u043e\u0440\u0440\u0435\u043a\u0442\u043d\u044b\u0439 email");
+}
+
+}},{'id':'DirectorForm_phone','inputID':'DirectorForm_phone','errorID':'DirectorForm_phone_em_','model':'DirectorForm','name':'phone','enableAjaxValidation':false,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("\u041e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u043e \u043a \u0437\u0430\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u044e");
+}
+
+}},{'id':'DirectorForm_message','inputID':'DirectorForm_message','errorID':'DirectorForm_message_em_','model':'DirectorForm','name':'message','enableAjaxValidation':false,'clientValidation':function(value, messages, attribute) {
+
+if(jQuery.trim(value)=='') {
+	messages.push("\u041e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u043e \u043a \u0437\u0430\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u044e");
+}
+
+}}],'errorCss':'error'});
+});
+/*]]>*/
+</script>
+
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div></body></html>

@@ -1,0 +1,130 @@
+<html xmlns:xlink="http://www.w3.org/1999/xlink" lang="en"><head>
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta content="text/javascript" http-equiv="Content-Script-Type">
+<link rel="stylesheet" type="text/css" href="default.css">
+<title>KONICA MINOLTA PageScope Web Connection</title>
+</head>
+<body>
+<form name="LP0_LOG" id="LP0LOG" method="POST" action="ulogin.cgi" style="display: block;" onsubmit="return ulogin_f.execLogin();" accept-charset="UTF-8">
+<input type="hidden" name="func" value="PSL_LP0_TOP"><input type="hidden" name="AuthType" id="LP0_AUTH" value="None"><input type="hidden" name="TrackType" value="None"><input type="hidden" name="ExtSvType" id="ExtSvTp"><input type="hidden" id="h_funcver" value="2"><input type="hidden" name="PswcForm" id="PswcForm" value="HtmlFlash"><div class="contents-body-top"><table class="top-table-noline" width="760px" height="85px"><tbody><tr><td width="760px" height="85px"><table class="top-table-noline"><tbody><tr>
+<td><a href="http://konicaminolta.com/" target="_blank" tabindex="1"><img src="horizon_s2.gif" width="123" height="85" border="0" alt="Link to KONICA MINOLTA logo website"></a></td>
+<td><a href="javascript:ulogin_f.about('about.html')"><img src="webconnection2.gif" width="450" height="85" border="0" alt="Link to product logo PageScopeWebConnection About information"></a></td>
+</tr></tbody></table></td></tr></tbody></table></div>
+<hr align="left" class="top-title">
+<div class="contents-body"><table class="top-table-noline" width="760px">
+<tbody><tr><td height="10px"></td></tr>
+<tr>
+<td width="154px"></td>
+<td>
+<table class="top-table-noline" width="606px"><tbody><tr>
+<th align="left" width="150px">Language</th>
+<td width="470px"><table class="top-table-noline"><tbody><tr>
+<td></td>
+<td><select size="1" name="Lang" onchange="ulogin_f.setCookieLang(this.options[this.selectedIndex].value);location.href='top.xml'"><option value="Auto" selected="">OS Language (OS Language)
+													</option>
+<option value="Panel">Panel Language (Panel Language)
+													</option>
+<option value="En">English (English)
+														</option></select></td>
+</tr></tbody></table></td>
+</tr></tbody></table>
+<hr align="left" class="top-contents-sepalater">
+<table class="top-table-noline" width="606px">
+<tbody><tr>
+<th rowspan="10" valign="top" align="left">Login</th>
+<td height="20px" align="left"><table width="460px" align="right"><tbody><tr><td height="20px">
+<input type="radio" name="Mode" value="Public" checked="" id="User"><label for="User">Public User</label>
+</td></tr></tbody></table></td>
+</tr>
+<tr><td></td></tr>
+<tr><td height="10px"></td></tr>
+<tr></tr>
+</tbody></table>
+<hr class="top-contents-sepalater2">
+<table class="top-table-noline" width="606px"><tbody><tr>
+<th valign="top" align="left"></th>
+<td height="30px"><table width="460px" align="right"><tbody><tr><td>
+<input type="radio" name="Mode" value="Admin" id="Admin"><label for="Admin">Administrator</label>
+</td></tr></tbody></table></td>
+</tr></tbody></table>
+<hr align="left" class="top-contents-sepalater">
+<table class="top-table-noline" width="606px">
+<tbody><tr>
+<th align="left" width="135px">View Mode</th>
+<td><table><tbody><tr>
+<td width="190px">
+<input type="radio" name="ViewMode" value="Flash" id="TO_R_VMO2"><label for="TO_R_VMO2">Flash</label>
+</td>
+<td width="200px">
+<input type="radio" name="ViewMode" value="Html" id="TO_R_VMO1"><label for="TO_R_VMO1">HTML</label>
+</td>
+</tr></tbody></table></td>
+</tr>
+<tr>
+<th align="left" width="135px"></th>
+<td><table><tbody><tr>
+<td><table><tbody><tr><td><font>Flash Player is necessary to see in Flash form.</font></td></tr></tbody></table></td>
+<td><a href="http://www.adobe.com/go/getflashplayer"><img src="get_flash_player.gif" border="0" alt="Get Flash Player"></a></td>
+</tr></tbody></table></td>
+</tr>
+</tbody></table>
+<hr align="left" class="top-contents-sepalater">
+<table class="top-table-noline" width="606px"><tbody><tr>
+<th align="left" width="135px">User Assist</th>
+<td colspan="2"><table><tbody><tr><td width="390px">
+<input type="checkbox" name="ShowDialog" value="Dialog" id="TO_C_SHD"><label for="TO_C_SHD">Display dialog box in case of warning.</label>
+</td></tr></tbody></table></td>
+</tr></tbody></table>
+</td>
+</tr>
+</tbody></table></div>
+<table style="top:5px" width="760px"><tbody><tr><td align="right"><input value="Login" type="submit"></td></tr></tbody></table>
+<hr class="top-contents-end" align="left">
+<br><div id="exAppFont"></div><table width="760px">
+<tbody><tr>
+<td width="148px"></td>
+<th align="left">Starting-up Data Management Utility</th>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<th align="left" width="135px"></th>
+<td><font>Flash Player is required to use the Data Management Utility.</font></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<th align="left" width="135px"></th>
+<td><a href="javascript:ulogin_f.openAppDialog('copy.xml','copy.html');"><img src="cpu_copy.gif" width="24" height="24" border="0" alt=" " align="absmiddle"><u>Manage Copy Protect Data</u></a></td>
+</tr>
+<tr>
+<th align="left" width="135px"></th>
+<td><a href="javascript:ulogin_f.openAppDialog('stamp.xml','stamp.html');"><img src="cpu_stamp.gif" width="24" height="24" border="0" alt=" " align="absmiddle"><u>Manage Stamp Data</u></a></td>
+</tr>
+<tr>
+<th align="left" width="135px"></th>
+<td><a href="javascript:ulogin_f.openAppDialog('font.xml','font.html');"><img src="fmu.gif" width="24" height="24" border="0" alt=" " align="absmiddle"><u>Manage Font/Macro (*1)</u></a></td>
+</tr>
+<tr>
+<th align="left" width="135px"></th>
+<td>(*1) Can only run on Windows Internet Explorer and Flash Player Version 9 and above environments.</td>
+</tr>
+
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td width="148px"></td>
+<td width="460px" colspan="2">
+<div class="text-formerror-title"><div id="PSL_LP0_ERRTitle2" style="display:none">Error</div></div>
+<div class="text-formerror"><div id="PSL_LP0_ERR_APPMULTI" style="display:none">The Data Management Utility cannot be started at the same time.</div></div>
+</td>
+</tr>
+</tbody></table>
+</form>
+<iframe src="ulogin_f.html" name="ulogin_f" width="0" height="0" frameborder="0"></iframe>
+
+</body></html>
